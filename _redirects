@@ -623,5 +623,19 @@
 /veterans-dentist-warren-mi/  /veterans-dentist-warren-mi.html  200
 /veterans-dentist-wyandotte-mi/  /veterans-dentist-wyandotte-mi.html  200
 
+# --- No-insurance pages
+/dentist-no-insurance/  /dentist-no-insurance.html  200
+/dentist-no-insurance-chesterfield-mi/  /dentist-no-insurance-chesterfield-mi.html  200
+/dentist-no-insurance-highland-mi/  /dentist-no-insurance-highland-mi.html  200
+/dentist-no-insurance-livonia-mi/  /dentist-no-insurance-livonia-mi.html  200
+/dentist-no-insurance-warren-mi/  /dentist-no-insurance-warren-mi.html  200
+/dentist-no-insurance-wyandotte-mi/  /dentist-no-insurance-wyandotte-mi.html  200
+/emergency-dentist-no-insurance/  /emergency-dentist-no-insurance.html  200
+/emergency-dentist-no-insurance-chesterfield-mi/  /emergency-dentist-no-insurance-chesterfield-mi.html  200
+/emergency-dentist-no-insurance-highland-mi/  /emergency-dentist-no-insurance-highland-mi.html  200
+/emergency-dentist-no-insurance-livonia-mi/  /emergency-dentist-no-insurance-livonia-mi.html  200
+/emergency-dentist-no-insurance-warren-mi/  /emergency-dentist-no-insurance-warren-mi.html  200
+/emergency-dentist-no-insurance-wyandotte-mi/  /emergency-dentist-no-insurance-wyandotte-mi.html  200
+
 # Fallback for any unmatched path -- serves the real branded 404 page
 /*  /404.html  404
