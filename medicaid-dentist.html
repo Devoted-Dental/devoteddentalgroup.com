@@ -8,7 +8,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NM8FD7D4');</script>
 <!-- End Google Tag Manager -->
-<!-- Google tag (gtag.js), GA4 base tag only. No conversion events
+<!-- Google tag (gtag.js) - GA4 base tag only. No conversion events
      fire from this block; conversions remain isolated to each office's
      own thank-you page. This gives GA4 pageview visibility sitewide. -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1W8KPY8S6R"></script>
@@ -18,8 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('js', new Date());
   gtag('config', 'G-1W8KPY8S6R');
 </script>
-<!-- Event snippet for Website phone call click conversion (Highland office only, 
-     AW-11179394442 is Highland's Google Ads account; this must never fire for
+<!-- Event snippet for Website phone call click conversion (Highland office only - AW-11179394442 is Highland's Google Ads account; this must never fire for
      any other office's phone number, consistent with the per-office isolation
      used for the 5 booking conversions). Delegated on document so it also
      catches the tel: link the nearest-office widget renders dynamically. -->
@@ -507,7 +506,7 @@ nav{background:var(--white);border-bottom:1px solid var(--grey-200);position:sti
 .prov-open::before{content:'●';font-size:14px}
 /* placeholder */
 
-/* Provider card hover video (feature not yet built, no <video> element exists in the markup) */
+/* Provider card hover video (feature not yet built - no <video> element exists in the markup) */
 .prov-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;opacity:0;transition:opacity 0.4s var(--ease-smooth);pointer-events:none}
 
 /* prov-placeholder now uses .img-placeholder shared style */
@@ -1154,7 +1153,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
    DEVOTED DENTAL AI CHAT WIDGET
    ================================================================ */
 /* ── TEMPORARY: custom chat widget hidden while Tidio bridges the
-   gap, remove this rule to bring the custom widget back. ── */
+   gap - remove this rule to bring the custom widget back. ── */
 .dd-chat-btn{display:none!important}
 .dd-chat-btn{
   position:fixed;bottom:72px;right:72px;z-index:8000;
@@ -1666,7 +1665,7 @@ function ddgBgError(img) {
           "name": "Does Devoted Dental accept Medicaid in Michigan?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Medicaid and the Healthy Michigan Plan are accepted at all 5 Metro Detroit locations."
+            "text": "Yes (Medicaid and the Healthy Michigan Plan are accepted at all 5 Metro Detroit locations."
           }
         },
         {
@@ -1674,7 +1673,7 @@ function ddgBgError(img) {
           "name": "Do I need a referral to be seen?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No, Medicaid patients are seen directly by our own dentists, with no outside referral required."
+            "text": "No) Medicaid patients are seen directly by our own dentists, with no outside referral required."
           }
         },
         {
@@ -2877,7 +2876,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //  CONFIGURATION: UPDATE BEFORE GOING LIVE
 // ================================================================
 var DD_CONFIG = {
-  // Chat proxy, WordPress REST API on the main site (Bluehost), no separate server or subdomain
+  // Chat proxy - WordPress REST API on the main site (Bluehost), no separate server or subdomain
   apiEndpoint: '/.netlify/functions/chat',
   chatEnabled: false,   // ← set to true only after ANTHROPIC_API_KEY is configured in Netlify
 
@@ -2987,7 +2986,7 @@ var toast     = document.getElementById('dd-notif-toast');
 var toastText = document.getElementById('dd-notif-text');
 
 // ================================================================
-//  SESSION ID, persists per browser tab, links this visitor's
+//  SESSION ID - persists per browser tab, links this visitor's
 //  conversation to the staff dashboard
 // ================================================================
 function getSessionId() {
@@ -3026,7 +3025,7 @@ function startStaffPolling() {
 }
 
 // ================================================================
-//  LEAD TRACKING, records confirmed conversion actions from chat
+//  LEAD TRACKING - records confirmed conversion actions from chat
 // ================================================================
 function trackLead(action) {
   if (!DD_CONFIG.chatEnabled) return;
@@ -3282,14 +3281,14 @@ function handleRepRequest(userMessage) {
 }
 
 // ================================================================
-//  LOCAL FAQ MATCHER, answers common questions instantly, no
+//  LOCAL FAQ MATCHER - answers common questions instantly, no
 //  external API call needed. Checked after emergency/clinical/rep
 //  detection and before any AI fallback attempt. Ordered from most
 //  specific (individual procedures) to most general, since the
 //  first keyword match wins.
 // ================================================================
 var FAQ_TOPICS = [
-  // ── Individual procedures, most specific, checked first ──────
+  // ── Individual procedures - most specific, checked first ──────
   {
     keywords: ['dental implant', 'implants', 'missing tooth', 'replace a tooth', 'replace my tooth'],
     reply: function() { return "Dental implants replace both the root and crown of a missing tooth, and can last decades with proper care. Placement involves a healing period of a few months for the post to fuse with the bone, then a custom crown on top. Want to know more or see pricing by office?"; },
@@ -3485,7 +3484,7 @@ function handleFaqLocally(topic) {
 
 function handleFallbackLocally() {
   botReply(
-    "I'm not totally sure about that one, the best move is to call us at " + DD_CONFIG.practicePhone + " so our team can help directly. You're welcome to book an appointment too!",
+    "I'm not totally sure about that one. The best move is to call us at " + DD_CONFIG.practicePhone + " so our team can help directly. You're welcome to book an appointment too!",
     ['Call Us', 'Book Appointment', 'Our Locations']
   );
 }
@@ -3505,7 +3504,7 @@ function sendToAI(userMessage) {
     return;
   }
 
-  // ── Local FAQ matching, covers most common questions with no
+  // ── Local FAQ matching - covers most common questions with no
   //    external API call at all ──────────────────────────────────
   var faqTopic = matchFaqTopic(userMessage);
   if (faqTopic) {
@@ -3515,7 +3514,7 @@ function sendToAI(userMessage) {
 
   // ── Skip API call if the proxy isn't enabled yet (set
   //    DD_CONFIG.chatEnabled to true once ANTHROPIC_API_KEY is
-  //    configured in Netlify), until then, unmatched questions
+  //    configured in Netlify) - until then, unmatched questions
   //    get a warm, honest local fallback instead. ────────────────
   if (!DD_CONFIG.chatEnabled) {
     handleFallbackLocally();
@@ -4117,14 +4116,14 @@ body.a11y-grayscale>:not(#a11y-btn):not(#a11y-panel):not(#a11y-gs-overlay):not(.
 })();
 </script>
 
-<!-- ── TEMPORARY: Tidio live chat bridge, remove this script and
+<!-- ── TEMPORARY: Tidio live chat bridge - remove this script and
      the .dd-chat-btn{display:none!important} rule above together when
      switching back to the custom chat widget. ── -->
 <script src="//code.tidio.co/nusg1p0i0arrxhaxs7vmzs7icrlnmis0.js" async></script>
 
 <!-- ── TEMPORARY: align Tidio's launcher with the ADA button so both
      sit at the same height (Tidio's own dashboard only offers
-     left/right placement, not vertical position, this is Tidio's
+     left/right placement, not vertical position - this is Tidio's
      documented custom-CSS method for vertical adjustment). Values
      match #a11y-btn's own bottom offset at each breakpoint exactly,
      so both buttons stay level at every screen size. Remove this

@@ -8,7 +8,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NM8FD7D4');</script>
 <!-- End Google Tag Manager -->
-<!-- Google tag (gtag.js), GA4 base tag only. No conversion events
+<!-- Google tag (gtag.js) - GA4 base tag only. No conversion events
      fire from this block; conversions remain isolated to each office's
      own thank-you page. This gives GA4 pageview visibility sitewide. -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1W8KPY8S6R"></script>
@@ -18,8 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('js', new Date());
   gtag('config', 'G-1W8KPY8S6R');
 </script>
-<!-- Event snippet for Website phone call click conversion (Highland office only, 
-     AW-11179394442 is Highland's Google Ads account; this must never fire for
+<!-- Event snippet for Website phone call click conversion (Highland office only - AW-11179394442 is Highland's Google Ads account; this must never fire for
      any other office's phone number, consistent with the per-office isolation
      used for the 5 booking conversions). Delegated on document so it also
      catches the tel: link the nearest-office widget renders dynamically. -->
@@ -511,7 +510,7 @@ nav{background:var(--white);border-bottom:1px solid var(--grey-200);position:sti
 .prov-open::before{content:'●';font-size:14px}
 /* placeholder */
 
-/* Provider card hover video (feature not yet built, no <video> element exists in the markup) */
+/* Provider card hover video (feature not yet built - no <video> element exists in the markup) */
 .prov-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;opacity:0;transition:opacity 0.4s var(--ease-smooth);pointer-events:none}
 
 /* prov-placeholder now uses .img-placeholder shared style */
@@ -1158,7 +1157,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
    DEVOTED DENTAL AI CHAT WIDGET
    ================================================================ */
 /* ── TEMPORARY: custom chat widget hidden while Tidio bridges the
-   gap, remove this rule to bring the custom widget back. ── */
+   gap - remove this rule to bring the custom widget back. ── */
 .dd-chat-btn{display:none!important}
 .dd-chat-btn{
   position:fixed;bottom:72px;right:72px;z-index:8000;
@@ -2056,8 +2055,7 @@ body.drawer-open{overflow:hidden}
                HOW THIS WORKS: this form does not use Netlify's built-in
                Forms product. On submit, the JS below reads every field
                (plus any uploaded files, base64-encoded) into a single
-               JSON object and POSTs it straight to a Netlify Function, 
-               netlify/functions/submit-referral.js, which sends the
+               JSON object and POSTs it straight to a Netlify Function - netlify/functions/submit-referral.js - which sends the
                referral by email itself via Resend and redirects to the
                thank-you page once that email is confirmed sent. Office
                routing (which office email a submission goes to, always
@@ -2067,11 +2065,11 @@ body.drawer-open{overflow:hidden}
 
                ONE-TIME SETUP AFTER DEPLOY (Netlify dashboard, not code):
                Site settings → Environment variables → add
-               RESEND_API_KEY (an API key from resend.com, the account
+               RESEND_API_KEY (an API key from resend.com - the account
                needs a verified sending domain for
                devoteddentalgroup.com, or sends will be rejected). This
                same variable is shared with submit-application.js on the
-               Employment page, set it once and both forms work. ── -->
+               Employment page - set it once and both forms work. ── -->
           <input type="text" name="bot-field" style="display:none" tabindex="-1" autocomplete="off">
           <div class="pr-accordion">
 
@@ -2177,7 +2175,7 @@ body.drawer-open{overflow:hidden}
                     <div class="pr-field">
                       <label for="pat-prefix">Prefix</label>
                       <select id="pat-prefix" name="pat-prefix">
-                        <option value="">N/A</option>
+                        <option value="">-</option>
                         <option value="Mr.">Mr.</option>
                         <option value="Ms.">Ms.</option>
                         <option value="Mrs.">Mrs.</option>
@@ -2288,7 +2286,7 @@ body.drawer-open{overflow:hidden}
                     <div class="pr-upload" id="pr-upload-extra">
                       <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
                       <strong>Click to upload or drag and drop</strong>
-                      <span>Optional, chart notes, referral letters, etc. Shares the same 4.2MB total with the imaging above</span>
+                      <span>Optional: chart notes, referral letters, etc. Shares the same 4.2MB total with the imaging above</span>
                       <input type="file" id="pr-extra-input" name="extra_files" multiple aria-label="Upload additional files such as chart notes or referral letters">
                     </div>
                     <div class="pr-file-list" id="pr-extra-list"></div>
@@ -2355,7 +2353,7 @@ body.drawer-open{overflow:hidden}
       <div class="pr-sidebar">
         <div class="pr-side-card" style="background:var(--lb-50);border-color:var(--lb-200)">
           <h3>Prefer a Printable Form?</h3>
-          <p style="font-size:0.85rem;color:var(--grey-600);line-height:1.5;margin:0 0 14px">Download a fillable PDF version of this referral form, complete it on your computer or by hand, then email or fax it to your preferred office.</p>
+          <p style="font-size:0.85rem;color:var(--grey-600);line-height:1.5;margin:0 0 14px">Download a fillable PDF version of this referral form: complete it on your computer or by hand, then email or fax it to your preferred office.</p>
           <a href="/assets/downloads/devoted-dental-provider-referral-form.pdf" download class="btn btn-primary btn-sm" style="width:100%;justify-content:center">
             <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" style="margin-right:6px"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download Referral Form (PDF)
@@ -2506,7 +2504,7 @@ body.drawer-open{overflow:hidden}
       // Keeps the native <input>'s FileList in sync with the tracked
       // `files` array (drag-and-drop and the Remove button both bypass
       // the native input, so without this the browser's own FormData
-      // serialization, which only ever looks at input.files, would
+      // serialization - which only ever looks at input.files - would
       // silently drop those files from the submission).
       function syncInputFiles() {
         var dt = new DataTransfer();
@@ -2635,29 +2633,29 @@ body.drawer-open{overflow:hidden}
         return;
       }
 
-      // Custom backend delivery, this form POSTs JSON straight to a
+      // Custom backend delivery - this form POSTs JSON straight to a
       // Netlify Function (netlify/functions/submit-referral.js), which
       // sends the referral by email itself rather than relying on
       // Netlify's built-in Forms product. Office routing (which office
       // email this goes to, always with brownp@devoteddentalgroup.com
       // copied as a fail-safe) is decided server-side in that function
-      // from the office name below, never editable by the person
+      // from the office name below - never editable by the person
       // filling out the form.
       //
       // File size limit: Netlify Functions cap request bodies at ~6MB,
       // and base64-encoding files for JSON transport adds ~30% overhead
-      // on top of their raw size, Netlify's own docs put the safe,
+      // on top of their raw size - Netlify's own docs put the safe,
       // effective ceiling for binary payloads at 4.5MB. 4.2MB total
       // (across every attached file combined, with headroom for the
       // rest of the form) is the largest limit this architecture can
       // safely support. This was tested live at 5MB and confirmed to
-      // fail, real submissions at that size were rejected by
+      // fail - real submissions at that size were rejected by
       // Netlify's infrastructure before ever reaching our function
       // code (surfacing only as this form's generic "Something went
       // wrong" fallback, never this function's own error message).
       // 4.2MB is the confirmed-safe ceiling; do not raise this without
       // testing a real submission first. This check is a TOTAL across
-      // all files, not per-file, matching exactly how the backend
+      // all files, not per-file - matching exactly how the backend
       // function enforces it, so a submission that passes here will
       // never be silently rejected server-side. Keep this in sync
       // with MAX_TOTAL_ATTACHMENT_BYTES in the function.
@@ -2679,7 +2677,7 @@ body.drawer-open{overflow:hidden}
         return new Promise(function(resolve, reject) {
           var reader = new FileReader();
           reader.onload = function() {
-            // reader.result is "data:<mime>;base64,<data>", strip the prefix
+            // reader.result is "data:<mime>;base64,<data>" - strip the prefix
             resolve({ name: file.name, base64: reader.result.split(',')[1] });
           };
           reader.onerror = reject;
@@ -3326,7 +3324,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //  CONFIGURATION: UPDATE BEFORE GOING LIVE
 // ================================================================
 var DD_CONFIG = {
-  // Chat proxy, WordPress REST API on the main site (Bluehost), no separate server or subdomain
+  // Chat proxy - WordPress REST API on the main site (Bluehost), no separate server or subdomain
   apiEndpoint: '/.netlify/functions/chat',
   chatEnabled: false,   // ← set to true only after ANTHROPIC_API_KEY is configured in Netlify
 
@@ -3436,7 +3434,7 @@ var toast     = document.getElementById('dd-notif-toast');
 var toastText = document.getElementById('dd-notif-text');
 
 // ================================================================
-//  SESSION ID, persists per browser tab, links this visitor's
+//  SESSION ID - persists per browser tab, links this visitor's
 //  conversation to the staff dashboard
 // ================================================================
 function getSessionId() {
@@ -3475,7 +3473,7 @@ function startStaffPolling() {
 }
 
 // ================================================================
-//  LEAD TRACKING, records confirmed conversion actions from chat
+//  LEAD TRACKING - records confirmed conversion actions from chat
 // ================================================================
 function trackLead(action) {
   if (!DD_CONFIG.chatEnabled) return;
@@ -3731,14 +3729,14 @@ function handleRepRequest(userMessage) {
 }
 
 // ================================================================
-//  LOCAL FAQ MATCHER, answers common questions instantly, no
+//  LOCAL FAQ MATCHER - answers common questions instantly, no
 //  external API call needed. Checked after emergency/clinical/rep
 //  detection and before any AI fallback attempt. Ordered from most
 //  specific (individual procedures) to most general, since the
 //  first keyword match wins.
 // ================================================================
 var FAQ_TOPICS = [
-  // ── Individual procedures, most specific, checked first ──────
+  // ── Individual procedures - most specific, checked first ──────
   {
     keywords: ['dental implant', 'implants', 'missing tooth', 'replace a tooth', 'replace my tooth'],
     reply: function() { return "Dental implants replace both the root and crown of a missing tooth, and can last decades with proper care. Placement involves a healing period of a few months for the post to fuse with the bone, then a custom crown on top. Want to know more or see pricing by office?"; },
@@ -3934,7 +3932,7 @@ function handleFaqLocally(topic) {
 
 function handleFallbackLocally() {
   botReply(
-    "I'm not totally sure about that one, the best move is to call us at " + DD_CONFIG.practicePhone + " so our team can help directly. You're welcome to book an appointment too!",
+    "I'm not totally sure about that one. The best move is to call us at " + DD_CONFIG.practicePhone + " so our team can help directly. You're welcome to book an appointment too!",
     ['Call Us', 'Book Appointment', 'Our Locations']
   );
 }
@@ -3954,7 +3952,7 @@ function sendToAI(userMessage) {
     return;
   }
 
-  // ── Local FAQ matching, covers most common questions with no
+  // ── Local FAQ matching - covers most common questions with no
   //    external API call at all ──────────────────────────────────
   var faqTopic = matchFaqTopic(userMessage);
   if (faqTopic) {
@@ -3964,7 +3962,7 @@ function sendToAI(userMessage) {
 
   // ── Skip API call if the proxy isn't enabled yet (set
   //    DD_CONFIG.chatEnabled to true once ANTHROPIC_API_KEY is
-  //    configured in Netlify), until then, unmatched questions
+  //    configured in Netlify) - until then, unmatched questions
   //    get a warm, honest local fallback instead. ────────────────
   if (!DD_CONFIG.chatEnabled) {
     handleFallbackLocally();
@@ -4547,14 +4545,14 @@ body.a11y-grayscale>:not(#a11y-btn):not(#a11y-panel):not(#a11y-gs-overlay):not(.
 })();
 </script>
 
-<!-- ── TEMPORARY: Tidio live chat bridge, remove this script and
+<!-- ── TEMPORARY: Tidio live chat bridge - remove this script and
      the .dd-chat-btn{display:none!important} rule above together when
      switching back to the custom chat widget. ── -->
 <script src="//code.tidio.co/nusg1p0i0arrxhaxs7vmzs7icrlnmis0.js" async></script>
 
 <!-- ── TEMPORARY: align Tidio's launcher with the ADA button so both
      sit at the same height (Tidio's own dashboard only offers
-     left/right placement, not vertical position, this is Tidio's
+     left/right placement, not vertical position - this is Tidio's
      documented custom-CSS method for vertical adjustment). Values
      match #a11y-btn's own bottom offset at each breakpoint exactly,
      so both buttons stay level at every screen size. Remove this

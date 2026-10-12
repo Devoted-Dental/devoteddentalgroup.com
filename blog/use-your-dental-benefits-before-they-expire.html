@@ -8,7 +8,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NM8FD7D4');</script>
 <!-- End Google Tag Manager -->
-<!-- Google tag (gtag.js), GA4 base tag only. No conversion events
+<!-- Google tag (gtag.js) - GA4 base tag only. No conversion events
      fire from this block; conversions remain isolated to each office's
      own thank-you page. This gives GA4 pageview visibility sitewide. -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1W8KPY8S6R"></script>
@@ -18,8 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('js', new Date());
   gtag('config', 'G-1W8KPY8S6R');
 </script>
-<!-- Event snippet for Website phone call click conversion (Highland office only, 
-     AW-11179394442 is Highland's Google Ads account; this must never fire for
+<!-- Event snippet for Website phone call click conversion (Highland office only - AW-11179394442 is Highland's Google Ads account; this must never fire for
      any other office's phone number, consistent with the per-office isolation
      used for the 5 booking conversions). Delegated on document so it also
      catches the tel: link the nearest-office widget renders dynamically. -->
@@ -468,7 +467,7 @@ footer::before{
 .hchip{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.85);font-size:14px;font-weight:600;padding:8px 14px;border-radius:var(--r-full)}
 .hchip svg{color:var(--lb-400);flex-shrink:0}
 
-/* ── Why Work Here, stat strip ── */
+/* ── Why Work Here - stat strip ── */
 .stat-strip{background:var(--white);border-bottom:1px solid var(--grey-100)}
 .stat-grid{display:grid;grid-template-columns:repeat(4,1fr)}
 .stat-cell{
@@ -486,7 +485,7 @@ footer::before{
 .stat-label{font-size:14px;font-weight:700;color:var(--grey-600);letter-spacing:.07em;text-transform:uppercase;line-height:1.65}
 @keyframes numPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
 
-/* ── Why Work Here, perks grid ── */
+/* ── Why Work Here - perks grid ── */
 .perks-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
 .perk-card{background:var(--white);border:1.5px solid var(--grey-200);border-radius:var(--r-xl);padding:32px 28px;text-align:center;transition:all var(--t-slow)}
 .perk-card:hover{border-color:var(--lb-300);box-shadow:var(--shadow-md);transform:translateY(-5px)}
@@ -660,7 +659,7 @@ footer::before{
    DEVOTED DENTAL AI CHAT WIDGET
    ================================================================ */
 /* ── TEMPORARY: custom chat widget hidden while Tidio bridges the
-   gap, remove this rule to bring the custom widget back. ── */
+   gap - remove this rule to bring the custom widget back. ── */
 .dd-chat-btn{display:none!important}
 .dd-chat-btn{
   position:fixed;bottom:72px;right:72px;z-index:8000;
@@ -993,7 +992,7 @@ body.drawer-open{overflow:hidden}
 <nav class="site-nav" role="navigation" aria-label="Main site navigation">
   <div class="container">
     <div class="nav-inner">
-      <a href="/" class="nav-logo" aria-label="Devoted Dental Group, go to homepage">
+      <a href="/" class="nav-logo" aria-label="Devoted Dental Group: go to homepage">
         <img src="/assets/logo.png" alt="Devoted Dental Group" height="36" style="height:36px;width:auto;object-fit:contain">
       </a>
       <div class="nav-links">
@@ -1659,10 +1658,10 @@ document.addEventListener('DOMContentLoaded', function() {
 (function() {
 
 // ================================================================
-//  CONFIGURATION, UPDATE BEFORE GOING LIVE
+//  CONFIGURATION - UPDATE BEFORE GOING LIVE
 // ================================================================
 var DD_CONFIG = {
-  // AI chat proxy, routed through this site's own Netlify Function so the
+  // AI chat proxy - routed through this site's own Netlify Function so the
   // real Anthropic API key stays server-side and is never exposed in page source.
   // Key lives in Netlify: Site settings > Environment variables > ANTHROPIC_API_KEY
   apiEndpoint: '/.netlify/functions/chat',
@@ -1672,7 +1671,7 @@ var DD_CONFIG = {
   // at all) and hands off anything else to a live team member.
   aiFallbackEnabled: false,
 
-  // Push notifications via ntfy.sh (free, install ntfy app on your phone)
+  // Push notifications via ntfy.sh (free - install ntfy app on your phone)
   // 1. Download ntfy app: https://ntfy.sh
   // 2. Choose a unique topic name and replace below
   // 3. Subscribe to that topic in the app
@@ -1681,7 +1680,7 @@ var DD_CONFIG = {
   // Practice info
 };
 
-// Session ID, persisted per browser tab, used by the WordPress plugin to log
+// Session ID - persisted per browser tab, used by the WordPress plugin to log
 // and group this visitor's conversation in the staff dashboard.
 function getSessionId() {
   var key = 'dd_chat_session_id';
@@ -1702,14 +1701,14 @@ var DD_SESSION_ID = getSessionId();
 //  SYSTEM PROMPT
 // ================================================================
 var SYSTEM_PROMPT = [
-  "You are a friendly, warm patient concierge for Devoted Dental Group, Metro Detroit's highest-rated dental group with 5 locations (Chesterfield, Highland, Livonia, Warren, Wyandotte).",
+  "You are a friendly, warm patient concierge for Devoted Dental Group (Metro Detroit's highest-rated dental group with 5 locations (Chesterfield, Highland, Livonia, Warren, Wyandotte).",
   "",
   "YOUR ROLE: Help prospective patients learn about our practice and book appointments.",
   "",
-  "ABSOLUTE RULES, NEVER BREAK THESE:",
+  "ABSOLUTE RULES) NEVER BREAK THESE:",
   "1. NEVER provide medical or dental advice of any kind. Never diagnose, assess symptoms, recommend treatments, interpret dental conditions, or comment on whether something sounds serious. This is non-negotiable.",
-  "2. If ANY medical or dental question is asked (pain, symptoms, treatments, conditions, medications, etc.), respond ONLY with: 'That's a great question for one of our doctors! I'm letting our clinical team know you have a question, someone will reach out to you shortly. In the meantime, you're welcome to call your nearest location, you'll find every office's number on our Locations page.' Then output the exact token: [NOTIFY_TEAM]",
-  "3. If someone describes an emergency or severe pain, immediately say: 'If you're experiencing a dental emergency, please call your nearest Devoted Dental location right now, we offer same-day emergency appointments at every office.' Then output [NOTIFY_TEAM]",
+  "2. If ANY medical or dental question is asked (pain, symptoms, treatments, conditions, medications, etc.), respond ONLY with: 'That's a great question for one of our doctors! I'm letting our clinical team know you have a question. Someone will reach out to you shortly. In the meantime, you're welcome to call your nearest location, you'll find every office's number on our Locations page.' Then output the exact token: [NOTIFY_TEAM]",
+  "3. If someone describes an emergency or severe pain, immediately say: 'If you're experiencing a dental emergency, please call your nearest Devoted Dental location right now. We offer same-day emergency appointments at every office.' Then output [NOTIFY_TEAM]",
   "",
   "WHAT YOU SHOULD DO:",
   "- Warmly greet patients and make them feel welcome",
@@ -1834,7 +1833,7 @@ function showTyping() {
 }
 
 
-// ── Delayed bot reply, shows typing bubble for 3s before responding ──
+// ── Delayed bot reply - shows typing bubble for 3s before responding ──
 function botReply(text, quickReplies) {
   showTyping();
   setTimeout(function() {
@@ -1915,7 +1914,7 @@ function isClinical(text) {
 
 function handleEmergencyLocally() {
   botReply(
-    'It sounds like you need to be seen right away, we\'re here to help! Please call your nearest Devoted Dental office or click below to find the one closest to you. We offer same-day emergency appointments at all 5 locations.',
+    'It sounds like you need to be seen right away. We\'re here to help! Please call your nearest Devoted Dental office or click below to find the one closest to you. We offer same-day emergency appointments at all 5 locations.',
     ['Find My Nearest Office', 'Show All Locations']
   );
 
@@ -2002,14 +2001,14 @@ function handleRepRequest(userMessage) {
 }
 
 // ================================================================
-//  LOCAL FAQ MATCHER, answers common questions instantly, no
+//  LOCAL FAQ MATCHER - answers common questions instantly, no
 //  external API call needed. Checked after emergency/clinical/rep
 //  detection and before any AI fallback attempt. Ordered from most
 //  specific (individual procedures) to most general, since the
 //  first keyword match wins.
 // ================================================================
 var FAQ_TOPICS = [
-  // ── Individual procedures, most specific, checked first ──────
+  // ── Individual procedures - most specific, checked first ──────
   {
     keywords: ['dental implant', 'implants', 'missing tooth', 'replace a tooth', 'replace my tooth'],
     reply: function() { return "Dental implants replace both the root and crown of a missing tooth, and can last decades with proper care. Placement involves a healing period of a few months for the post to fuse with the bone, then a custom crown on top. Want to know more or see pricing by office?"; },
@@ -2205,7 +2204,7 @@ function handleFaqLocally(topic) {
 
 function handleFallbackLocally() {
   botReply(
-    "I'm not totally sure about that one, the best move is to call us at " + DD_CONFIG.practicePhone + " so our team can help directly. You're welcome to book an appointment too!",
+    "I'm not totally sure about that one. The best move is to call us at " + DD_CONFIG.practicePhone + " so our team can help directly. You're welcome to book an appointment too!",
     ['Call Us', 'Book Appointment', 'Our Locations']
   );
 }
@@ -2225,7 +2224,7 @@ function sendToAI(userMessage) {
     return;
   }
 
-  // ── Local FAQ matching, covers most common questions with no
+  // ── Local FAQ matching - covers most common questions with no
   //    external API call at all ──────────────────────────────────
   var faqTopic = matchFaqTopic(userMessage);
   if (faqTopic) {
@@ -2276,7 +2275,7 @@ function sendToAI(userMessage) {
 
     var reply = (data.content && data.content[0] && data.content[0].text) || "I'm sorry, I'm having trouble connecting right now. Please visit our Locations page to reach the office nearest you.";
 
-    // Strip [NOTIFY_TEAM] token, notifications only fire for rep requests
+    // Strip [NOTIFY_TEAM] token - notifications only fire for rep requests
     reply = reply.replace('[NOTIFY_TEAM]', '').trim();
 
     // Save to history
@@ -2327,7 +2326,7 @@ var QUICK_ACTIONS = {
   },
   'Book Now': function() { QUICK_ACTIONS['Book Appointment'](); },
   'Book Online Now': function() { if (typeof window.openBookingModal === 'function') { window.openBookingModal(); } else { window.location.href='/locations/'; } },
-  'Call Us': function() { botReply('You can reach any of our offices directly, Chesterfield: (586) 325-3000, Highland: (248) 717-2911, Livonia: (734) 444-8888, Warren: (586) 250-5000, Wyandotte: (734) 288-9999.',['Book Online','Our Locations']); },
+  'Call Us': function() { botReply('You can reach any of our offices directly: Chesterfield: (586) 325-3000, Highland: (248) 717-2911, Livonia: (734) 444-8888, Warren: (586) 250-5000, Wyandotte: (734) 288-9999.',['Book Online','Our Locations']); },
   'Get Directions': function() { window.open('https://devoteddentalgroup.com/locations/','_blank'); },
   'Our Locations': function() {
     botReply(
@@ -2507,7 +2506,7 @@ window.DDChat = {
 
 <script id="dd-location-module">
 /* ═══════════════════════════════════════════════════════════════
-   DEVOTED DENTAL, Location Finder Module
+   DEVOTED DENTAL - Location Finder Module
    All functions exposed on window.DDLocation to avoid scope issues
    ═══════════════════════════════════════════════════════════════ */
 window.DDLocation = (function() {
@@ -2593,7 +2592,7 @@ window.DDLocation = (function() {
     intro.style.cssText = 'font-size:13.5px;color:var(--db-900);line-height:1.6;padding:10px 14px 8px';
     intro.textContent = nearestOffice
       ? 'Found your nearest location! Give us a call and we’ll take great care of you.'
-      : 'Here are all of our Metro Detroit locations, call whichever is most convenient!';
+      : 'Here are all of our Metro Detroit locations. Call whichever is most convenient!';
 
     var inner = document.createElement('div');
     inner.className = 'dd-msg-bubble';
@@ -2907,14 +2906,14 @@ body.a11y-grayscale>:not(#a11y-btn):not(#a11y-panel):not(#a11y-gs-overlay):not(.
 })();
 </script>
 
-<!-- ── TEMPORARY: Tidio live chat bridge, remove this script and
+<!-- ── TEMPORARY: Tidio live chat bridge - remove this script and
      the .dd-chat-btn{display:none!important} rule above together when
      switching back to the custom chat widget. ── -->
 <script src="//code.tidio.co/nusg1p0i0arrxhaxs7vmzs7icrlnmis0.js" async></script>
 
 <!-- ── TEMPORARY: align Tidio's launcher with the ADA button so both
      sit at the same height (Tidio's own dashboard only offers
-     left/right placement, not vertical position, this is Tidio's
+     left/right placement, not vertical position - this is Tidio's
      documented custom-CSS method for vertical adjustment). Values
      match #a11y-btn's own bottom offset at each breakpoint exactly,
      so both buttons stay level at every screen size. Remove this

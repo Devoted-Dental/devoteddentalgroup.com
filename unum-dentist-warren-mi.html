@@ -8,7 +8,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NM8FD7D4');</script>
 <!-- End Google Tag Manager -->
-<!-- Google tag (gtag.js), GA4 base tag only. No conversion events
+<!-- Google tag (gtag.js) - GA4 base tag only. No conversion events
      fire from this block; conversions remain isolated to each office's
      own thank-you page. This gives GA4 pageview visibility sitewide. -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1W8KPY8S6R"></script>
@@ -18,8 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('js', new Date());
   gtag('config', 'G-1W8KPY8S6R');
 </script>
-<!-- Event snippet for Website phone call click conversion (Highland office only, 
-     AW-11179394442 is Highland's Google Ads account; this must never fire for
+<!-- Event snippet for Website phone call click conversion (Highland office only - AW-11179394442 is Highland's Google Ads account; this must never fire for
      any other office's phone number, consistent with the per-office isolation
      used for the 5 booking conversions). Delegated on document so it also
      catches the tel: link the nearest-office widget renders dynamically. -->
@@ -71,11 +70,11 @@ document.addEventListener('click', function(e){
 
 <style>
 
-/* ── Disable fi/fl/ff ligatures, prevents dotless-i after f ── */
+/* ── Disable fi/fl/ff ligatures - prevents dotless-i after f ── */
 * { font-variant-ligatures: no-common-ligatures; }
 * {  }
 /* ================================================================
-   DESIGN TOKENS, identical to homepage
+   DESIGN TOKENS - identical to homepage
    ================================================================ */
 :root {
   --lb-50:#F0F8FF; --lb-100:#E0F2FE; --lb-200:#BAE6FD; --lb-300:#7DD3FC;
@@ -619,7 +618,7 @@ footer::before{
 }
 
 /* ================================================================
-   WCAG 2.0 AA COMPLIANCE, ADA + HIPAA
+   WCAG 2.0 AA COMPLIANCE - ADA + HIPAA
    ================================================================ */
 .skip-nav{position:absolute;top:-100px;left:16px;background:var(--db-900);color:var(--white);padding:10px 20px;border-radius:0 0 var(--r-md) var(--r-md);font-size:0.875rem;font-weight:700;z-index:9999;text-decoration:none;transition:top 0.2s;border:2px solid var(--lb-400)}
 .skip-nav:focus{top:0;outline:3px solid var(--lb-400);outline-offset:2px}
@@ -632,7 +631,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .faq-a-inner a,p a{text-decoration:underline}
 
 /* ================================================================
-   BOOKING MODAL, Modento location selector
+   BOOKING MODAL - Modento location selector
    ================================================================ */
 .bm-overlay{
   position:fixed;inset:0;z-index:10000;
@@ -737,7 +736,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .nav-dd-all{font-weight:700;color:var(--lb-600)!important}
 
 
-/* Nav dropdown trigger, guaranteed row layout */
+/* Nav dropdown trigger - guaranteed row layout */
 .nav-dd-trigger{display:inline-flex!important;flex-direction:row!important;align-items:center!important;gap:5px!important;white-space:nowrap!important}
 .dd-chevron{display:block;flex-shrink:0;vertical-align:middle}
 
@@ -745,7 +744,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
    DEVOTED DENTAL AI CHAT WIDGET
    ================================================================ */
 /* ── TEMPORARY: custom chat widget hidden while Tidio bridges the
-   gap, remove this rule to bring the custom widget back. ── */
+   gap - remove this rule to bring the custom widget back. ── */
 .dd-chat-btn{display:none!important}
 .dd-chat-btn{
   position:fixed;bottom:72px;right:72px;z-index:8000;
@@ -1053,7 +1052,7 @@ body.drawer-open{overflow:hidden}
 <nav class="site-nav" role="navigation" aria-label="Main site navigation">
   <div class="container">
     <div class="nav-inner">
-      <a href="/" class="nav-logo" aria-label="Devoted Dental Group, go to homepage">
+      <a href="/" class="nav-logo" aria-label="Devoted Dental Group: go to homepage">
         <img src="/assets/logo.png" alt="Devoted Dental Group" height="36" style="height:36px;width:auto;object-fit:contain">
       </a>
       <div class="nav-links">
@@ -1340,7 +1339,7 @@ body.drawer-open{overflow:hidden}
     </div>
     <div class="page-hero-breadcrumb"><a href="/">Home</a><span>&rsaquo;</span><a href="/warren/">Devoted Dental Warren</a><span>&rsaquo;</span><span style="color:rgba(255,255,255,0.7)">Unum Dentist in Warren, MI</span></div>
     <h1 id="lp-heading" style="color:#fff">Unum Dentist<br><span style="color:var(--lb-400)">Warren, MI</span></h1>
-    <p class="page-hero-sub">Devoted Dental Warren proudly accepts Unum, quality dental care in Warren, MI for patients with Unum coverage.</p>
+    <p class="page-hero-sub">Devoted Dental Warren proudly accepts Unum. Get quality dental care in Warren, MI for patients with Unum coverage.</p>
     <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:12px">
       <a href="#book" data-book-modal class="btn btn-primary">Book an Appointment<svg class="arrow" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
       <a href="tel:5862505000" class="btn" style="background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.3)"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M6.6 10.8a15.6 15.6 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.57 3.57 1 1 0 01-.25 1z"/></svg>(586) 250-5000</a>
@@ -1419,7 +1418,7 @@ body.drawer-open{overflow:hidden}
             <div style="width:40px;height:40px;border-radius:12px;background:var(--lb-50);display:flex;align-items:center;justify-content:center;color:var(--lb-600);flex-shrink:0">
               <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
-            <h2 style="font-family:'Nunito Sans',sans-serif;font-size:1.05rem;font-weight:800;color:var(--db-900);line-height:1.3;margin:0">No Surprises. We Verify First</h2>
+            <h2 style="font-family:'Nunito Sans',sans-serif;font-size:1.05rem;font-weight:800;color:var(--db-900);line-height:1.3;margin:0">No Surprises: We Verify First</h2>
           </div>
           <p style="font-size:.93rem;color:var(--grey-600);line-height:1.85;margin:0">Before any treatment begins, our Warren front desk team confirms exactly what your Unum plan covers, so you know your costs upfront.</p>
         </div><div style="background:var(--white);border:1.5px solid var(--grey-200);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:14px">
@@ -1691,7 +1690,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <!-- ============================================================
-     BOOKING MODAL, Modento location selector
+     BOOKING MODAL - Modento location selector
      ============================================================ -->
 <div id="booking-modal" class="bm-overlay" role="dialog" aria-modal="true" aria-labelledby="bm-heading" aria-hidden="true">
   <div class="bm-panel" role="document">
@@ -1707,7 +1706,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <p class="bm-sub">Choose a Devoted Dental office to book your appointment. Same-day appointments available at all locations.</p>
     </div>
     <div class="bm-offices">
-        <a href="https://book.modento.io/devoted-dental-warren/patient-details" target="_blank" rel="noopener" class="bm-office-card" data-office="warren" aria-label="Book at Warren, 29856 Schoenherr Rd">
+        <a href="https://book.modento.io/devoted-dental-warren/patient-details" target="_blank" rel="noopener" class="bm-office-card" data-office="warren" aria-label="Book at Warren: 29856 Schoenherr Rd">
           <div class="bm-office-info">
             <div class="bm-office-name">Warren</div>
             <div class="bm-office-addr">29856 Schoenherr Rd, Warren, MI 48088</div>
@@ -1716,7 +1715,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </span>
         </a>
-        <a href="https://book.modento.io/c/bb92f83803484ef0bf5e046abb462425/Highland" target="_blank" rel="noopener" class="bm-office-card" data-office="highland" aria-label="Book at Highland, 2287 S Milford Rd">
+        <a href="https://book.modento.io/c/bb92f83803484ef0bf5e046abb462425/Highland" target="_blank" rel="noopener" class="bm-office-card" data-office="highland" aria-label="Book at Highland: 2287 S Milford Rd">
           <div class="bm-office-info">
             <div class="bm-office-name">Highland</div>
             <div class="bm-office-addr">2287 S Milford Rd, Highland, MI 48357</div>
@@ -1725,7 +1724,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </span>
         </a>
-        <a href="https://book.modento.io/c/bed39b1a32194b5980531fcf507826b1/Chesterfield" target="_blank" rel="noopener" class="bm-office-card" data-office="chesterfield" aria-label="Book at Chesterfield, 33497 23 Mile Rd #140">
+        <a href="https://book.modento.io/c/bed39b1a32194b5980531fcf507826b1/Chesterfield" target="_blank" rel="noopener" class="bm-office-card" data-office="chesterfield" aria-label="Book at Chesterfield: 33497 23 Mile Rd #140">
           <div class="bm-office-info">
             <div class="bm-office-name">Chesterfield</div>
             <div class="bm-office-addr">33497 23 Mile Rd #140, New Baltimore, MI 48047</div>
@@ -1734,7 +1733,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </span>
         </a>
-        <a href="https://book.modento.io/c/ae0b8b5e9c13496b95764ed2f76ffd81/Livonia" target="_blank" rel="noopener" class="bm-office-card" data-office="livonia" aria-label="Book at Livonia, 30499 Plymouth Rd">
+        <a href="https://book.modento.io/c/ae0b8b5e9c13496b95764ed2f76ffd81/Livonia" target="_blank" rel="noopener" class="bm-office-card" data-office="livonia" aria-label="Book at Livonia: 30499 Plymouth Rd">
           <div class="bm-office-info">
             <div class="bm-office-name">Livonia</div>
             <div class="bm-office-addr">30499 Plymouth Rd, Livonia, MI 48150</div>
@@ -1743,7 +1742,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </span>
         </a>
-        <a href="https://book.modento.io/c/f42f715826cd49aa953d1843aa32e135/Wyandotte" target="_blank" rel="noopener" class="bm-office-card" data-office="wyandotte" aria-label="Book at Wyandotte, 1307 Ford Ave">
+        <a href="https://book.modento.io/c/f42f715826cd49aa953d1843aa32e135/Wyandotte" target="_blank" rel="noopener" class="bm-office-card" data-office="wyandotte" aria-label="Book at Wyandotte: 1307 Ford Ave">
           <div class="bm-office-info">
             <div class="bm-office-name">Wyandotte</div>
             <div class="bm-office-addr">1307 Ford Ave, Wyandotte, MI 48192</div>
@@ -1900,10 +1899,10 @@ document.addEventListener('DOMContentLoaded', function() {
 (function() {
 
 // ================================================================
-//  CONFIGURATION, UPDATE BEFORE GOING LIVE
+//  CONFIGURATION - UPDATE BEFORE GOING LIVE
 // ================================================================
 var DD_CONFIG = {
-  // AI chat proxy, routed through this site's own Netlify Function so the
+  // AI chat proxy - routed through this site's own Netlify Function so the
   // real Anthropic API key stays server-side and is never exposed in page source.
   // Key lives in Netlify: Site settings > Environment variables > ANTHROPIC_API_KEY
   apiEndpoint: '/.netlify/functions/chat',
@@ -1913,7 +1912,7 @@ var DD_CONFIG = {
   // at all) and hands off anything else to a live team member.
   aiFallbackEnabled: false,
 
-  // Push notifications via ntfy.sh (free, install ntfy app on your phone)
+  // Push notifications via ntfy.sh (free - install ntfy app on your phone)
   // 1. Download ntfy app: https://ntfy.sh
   // 2. Choose a unique topic name and replace below
   // 3. Subscribe to that topic in the app
@@ -1928,14 +1927,14 @@ var DD_CONFIG = {
 //  SYSTEM PROMPT
 // ================================================================
 var SYSTEM_PROMPT = [
-  "You are a friendly, warm patient concierge for Devoted Dental Group, Metro Detroit's highest-rated dental group with 5 locations (Chesterfield, Highland, Livonia, Warren, Wyandotte).",
+  "You are a friendly, warm patient concierge for Devoted Dental Group (Metro Detroit's highest-rated dental group with 5 locations (Chesterfield, Highland, Livonia, Warren, Wyandotte).",
   "",
   "YOUR ROLE: Help prospective patients learn about our practice and book appointments.",
   "",
-  "ABSOLUTE RULES, NEVER BREAK THESE:",
+  "ABSOLUTE RULES) NEVER BREAK THESE:",
   "1. NEVER provide medical or dental advice of any kind. Never diagnose, assess symptoms, recommend treatments, interpret dental conditions, or comment on whether something sounds serious. This is non-negotiable.",
-  "2. If ANY medical or dental question is asked (pain, symptoms, treatments, conditions, medications, etc.), respond ONLY with: 'That's a great question for one of our doctors! I'm letting our clinical team know you have a question, someone will reach out to you shortly. In the meantime, you're welcome to call us directly at (586) 250-5000.' Then output the exact token: [NOTIFY_TEAM]",
-  "3. If someone describes an emergency or severe pain, immediately say: 'If you're experiencing a dental emergency, please call us right now at (586) 250-5000, we offer same-day emergency appointments.' Then output [NOTIFY_TEAM]",
+  "2. If ANY medical or dental question is asked (pain, symptoms, treatments, conditions, medications, etc.), respond ONLY with: 'That's a great question for one of our doctors! I'm letting our clinical team know you have a question. Someone will reach out to you shortly. In the meantime, you're welcome to call us directly at (586) 250-5000.' Then output the exact token: [NOTIFY_TEAM]",
+  "3. If someone describes an emergency or severe pain, immediately say: 'If you're experiencing a dental emergency, please call us right now at (586) 250-5000. We offer same-day emergency appointments.' Then output [NOTIFY_TEAM]",
   "",
   "WHAT YOU SHOULD DO:",
   "- Warmly greet patients and make them feel welcome",
@@ -2060,7 +2059,7 @@ function showTyping() {
 }
 
 
-// ── Delayed bot reply, shows typing bubble for 3s before responding ──
+// ── Delayed bot reply - shows typing bubble for 3s before responding ──
 function botReply(text, quickReplies) {
   showTyping();
   setTimeout(function() {
@@ -2141,7 +2140,7 @@ function isClinical(text) {
 
 function handleEmergencyLocally() {
   botReply(
-    'It sounds like you need to be seen right away, we\'re here to help! Please call your nearest Devoted Dental office or click below to find the one closest to you. We offer same-day emergency appointments at all 5 locations.',
+    'It sounds like you need to be seen right away. We\'re here to help! Please call your nearest Devoted Dental office or click below to find the one closest to you. We offer same-day emergency appointments at all 5 locations.',
     ['Find My Nearest Office', 'Show All Locations']
   );
 
@@ -2228,14 +2227,14 @@ function handleRepRequest(userMessage) {
 }
 
 // ================================================================
-//  LOCAL FAQ MATCHER, answers common questions instantly, no
+//  LOCAL FAQ MATCHER - answers common questions instantly, no
 //  external API call needed. Checked after emergency/clinical/rep
 //  detection and before any AI fallback attempt. Ordered from most
 //  specific (individual procedures) to most general, since the
 //  first keyword match wins.
 // ================================================================
 var FAQ_TOPICS = [
-  // ── Individual procedures, most specific, checked first ──────
+  // ── Individual procedures - most specific, checked first ──────
   {
     keywords: ['dental implant', 'implants', 'missing tooth', 'replace a tooth', 'replace my tooth'],
     reply: function() { return "Dental implants replace both the root and crown of a missing tooth, and can last decades with proper care. Placement involves a healing period of a few months for the post to fuse with the bone, then a custom crown on top. Want to know more or see pricing by office?"; },
@@ -2431,7 +2430,7 @@ function handleFaqLocally(topic) {
 
 function handleFallbackLocally() {
   botReply(
-    "I'm not totally sure about that one, the best move is to call us at " + DD_CONFIG.practicePhone + " so our team can help directly. You're welcome to book an appointment too!",
+    "I'm not totally sure about that one. The best move is to call us at " + DD_CONFIG.practicePhone + " so our team can help directly. You're welcome to book an appointment too!",
     ['Call Us', 'Book Appointment', 'Our Locations']
   );
 }
@@ -2451,7 +2450,7 @@ function sendToAI(userMessage) {
     return;
   }
 
-  // ── Local FAQ matching, covers most common questions with no
+  // ── Local FAQ matching - covers most common questions with no
   //    external API call at all ──────────────────────────────────
   var faqTopic = matchFaqTopic(userMessage);
   if (faqTopic) {
@@ -2502,7 +2501,7 @@ function sendToAI(userMessage) {
 
     var reply = (data.content && data.content[0] && data.content[0].text) || "I'm sorry, I'm having trouble connecting right now. Please call us directly at " + DD_CONFIG.practicePhone;
 
-    // Strip [NOTIFY_TEAM] token, notifications only fire for rep requests
+    // Strip [NOTIFY_TEAM] token - notifications only fire for rep requests
     reply = reply.replace('[NOTIFY_TEAM]', '').trim();
 
     // Save to history
@@ -2554,7 +2553,7 @@ var QUICK_ACTIONS = {
   },
   'Book Now': function() { QUICK_ACTIONS['Book Appointment'](); },
   'Book Online Now': function() { window.open('https://book.modento.io/devoted-dental-warren/patient-details','_blank'); },
-  'Call Us': function() { botReply('You can reach any of our offices directly, Warren: (586) 250-5000, Highland: (248) 717-2911, Chesterfield: (586) 325-3000, Livonia: (734) 444-8888, Wyandotte: (734) 288-9999.',['Book Online','Our Locations']); },
+  'Call Us': function() { botReply('You can reach any of our offices directly: Warren: (586) 250-5000, Highland: (248) 717-2911, Chesterfield: (586) 325-3000, Livonia: (734) 444-8888, Wyandotte: (734) 288-9999.',['Book Online','Our Locations']); },
   'Call (586) 250-5000': function() { window.location.href='tel:5862505000'; },
   'Get Directions': function() { window.open('https://devoteddentalgroup.com/locations/','_blank'); },
   'Our Locations': function() {
@@ -2735,7 +2734,7 @@ window.DDChat = {
 
 <script id="dd-location-module">
 /* ═══════════════════════════════════════════════════════════════
-   DEVOTED DENTAL, Location Finder Module
+   DEVOTED DENTAL - Location Finder Module
    All functions exposed on window.DDLocation to avoid scope issues
    ═══════════════════════════════════════════════════════════════ */
 window.DDLocation = (function() {
@@ -2821,7 +2820,7 @@ window.DDLocation = (function() {
     intro.style.cssText = 'font-size:13.5px;color:var(--db-900);line-height:1.6;padding:10px 14px 8px';
     intro.textContent = nearestOffice
       ? 'Found your nearest location! Give us a call and we’ll take great care of you.'
-      : 'Here are all of our Metro Detroit locations, call whichever is most convenient!';
+      : 'Here are all of our Metro Detroit locations. Call whichever is most convenient!';
 
     var inner = document.createElement('div');
     inner.className = 'dd-msg-bubble';
@@ -3174,14 +3173,14 @@ body.a11y-grayscale>:not(#a11y-btn):not(#a11y-panel):not(#a11y-gs-overlay):not(.
 })();
 </script>
 
-<!-- ── TEMPORARY: Tidio live chat bridge, remove this script and
+<!-- ── TEMPORARY: Tidio live chat bridge - remove this script and
      the .dd-chat-btn{display:none!important} rule above together when
      switching back to the custom chat widget. ── -->
 <script src="//code.tidio.co/nusg1p0i0arrxhaxs7vmzs7icrlnmis0.js" async></script>
 
 <!-- ── TEMPORARY: align Tidio's launcher with the ADA button so both
      sit at the same height (Tidio's own dashboard only offers
-     left/right placement, not vertical position, this is Tidio's
+     left/right placement, not vertical position - this is Tidio's
      documented custom-CSS method for vertical adjustment). Values
      match #a11y-btn's own bottom offset at each breakpoint exactly,
      so both buttons stay level at every screen size. Remove this
