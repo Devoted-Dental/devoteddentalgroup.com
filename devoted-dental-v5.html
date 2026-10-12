@@ -505,6 +505,11 @@ nav{background:var(--white);border-bottom:1px solid var(--grey-200);position:sti
    ================================================================ */
 .insurance-section{background:var(--lb-50)}
 .ins-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:36px}
+.ins-group-label{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--lb-700);margin:0 0 12px;text-align:left}
+.ins-grid+.ins-group-label{margin-top:8px}
+.ins-all{text-align:center;margin:-8px 0 36px;font-weight:700}
+.ins-all a{color:var(--lb-700);text-decoration:none}
+.ins-all a:hover{text-decoration:underline}
 .ins-pill{background:var(--white);border:1.5px solid var(--grey-200);border-radius:var(--r-sm);padding:14px 10px;text-align:center;font-size:14px;font-weight:700;color:var(--grey-600);transition:all var(--t);cursor:default}
 .ins-pill:hover{border-color:var(--lb-400);color:var(--lb-700);background:var(--lb-50);transform:translateY(-2px);box-shadow:var(--shadow-sm)}
 a.ins-pill{cursor:pointer;text-decoration:none;display:flex;align-items:center;justify-content:center}
@@ -2779,7 +2784,7 @@ body.drawer-open{overflow:hidden}
           <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
         </div>
         <div>
-          <div class="why-title">We Accept Medicaid, Medicare &amp; 50+ Insurance Plans</div>
+          <div class="why-title">We Accept Medicaid, Medicare &amp; 60+ Insurance Plans</div>
           <div class="why-desc">One of the few dental groups in Metro Detroit accepting Medicaid at all 5 locations. Healthy Michigan Plan, Delta Dental, Blue Cross, Cigna, Aetna, MetLife, CareCredit, and dozens more. We never turn a patient away.</div>
         </div>
       </div>
@@ -3016,38 +3021,93 @@ body.drawer-open{overflow:hidden}
   <div class="container">
     <div class="section-header reveal">
       <span class="label">Coverage &amp; payment options</span>
-      <h2 id="ins-heading">We Accept 50+ Insurance Plans<br><span class="text-blue">Including Medicaid &amp; Medicare</span></h2>
+      <h2 id="ins-heading">We Accept 60+ Insurance Plans<br><span class="text-blue">Including Medicaid &amp; Medicare</span></h2>
       <p>Devoted Dental Group accepts more insurance plans than virtually any dental group in Metro Detroit. Our goal is simple: no patient should go without dental care because of insurance. We find a way.</p>
     </div>
 
-    <div class="ins-grid reveal" role="group" aria-label="Accepted insurance plans">
+        <div class="ins-group-label reveal">Medicaid &amp; Michigan State Plans</div>
+    <div class="ins-grid reveal" role="group" aria-label="Medicaid and Michigan State Plans">
       <a href="/medicaid-dentist/" class="ins-pill">Medicaid</a>
+      <a href="/healthy-michigan-dentist/" class="ins-pill">Healthy Michigan Plan</a>
+      <a href="/healthy-kids-dental-dentist/" class="ins-pill">Healthy Kids Dental</a>
+      <a href="/dentaquest-dentist/" class="ins-pill">DentaQuest</a>
+      <a href="/blue-cross-complete-dentist/" class="ins-pill">Blue Cross Complete</a>
+      <a href="/molina-dentist/" class="ins-pill">Molina</a>
+      <a href="/mclaren-dentist/" class="ins-pill">McLaren</a>
+      <a href="/uhc-community-plan-dentist/" class="ins-pill">UHC Community Plan</a>
+      <a href="/meridian-dentist/" class="ins-pill">Meridian</a>
+      <a href="/ambetter-meridian-dentist/" class="ins-pill">Ambetter from Meridian</a>
+      <a href="/hap-caresource-dentist/" class="ins-pill">HAP CareSource</a>
+      <a href="/aetna-better-health-dentist/" class="ins-pill">Aetna Better Health</a>
+      <a href="/michigan-complete-health-dentist/" class="ins-pill">Michigan Complete Health</a>
+    </div>
+
+    <div class="ins-group-label reveal">Medicare &amp; Medicare Advantage</div>
+    <div class="ins-grid reveal" role="group" aria-label="Medicare and Medicare Advantage">
       <a href="/medicare-dentist/" class="ins-pill">Medicare</a>
-      <a href="/healthy-michigan-dentist/" class="ins-pill">Healthy Michigan</a>
+      <a href="/humana-dentist/" class="ins-pill">Humana</a>
+      <a href="/wellcare-dentist/" class="ins-pill">Wellcare</a>
+      <a href="/aetna-medicare-dentist/" class="ins-pill">Aetna Medicare</a>
+      <a href="/unitedhealthcare-medicare-advantage-dentist/" class="ins-pill">UHC Medicare Advantage</a>
+      <a href="/priority-health-medicare-dentist/" class="ins-pill">Priority Health Medicare</a>
+      <a href="/zing-health-dentist/" class="ins-pill">Zing Health</a>
+    </div>
+
+    <div class="ins-group-label reveal">Commercial &amp; Employer Dental Plans</div>
+    <div class="ins-grid reveal" role="group" aria-label="Commercial and Employer Dental Plans">
       <a href="/delta-dental/" class="ins-pill">Delta Dental</a>
       <a href="/blue-cross-dentist/" class="ins-pill">Blue Cross</a>
+      <a href="/anthem-bcbs-dentist/" class="ins-pill">Anthem BCBS</a>
+      <a href="/bcbs-fep-dental-dentist/" class="ins-pill">BCBS FEP Dental</a>
       <a href="/cigna-dentist/" class="ins-pill">Cigna</a>
       <a href="/aetna-dentist/" class="ins-pill">Aetna</a>
       <a href="/metlife-dentist/" class="ins-pill">MetLife</a>
-      <a href="/humana-dentist/" class="ins-pill">Humana</a>
-      <a href="/united-concordia-dentist/" class="ins-pill">United Concordia</a>
-      <a href="/molina-dentist/" class="ins-pill">Molina</a>
-      <a href="/dentaquest-dentist/" class="ins-pill">Dentaquest</a>
-      <a href="/priority-health-dentist/" class="ins-pill">Priority Health</a>
-      <a href="/mclaren-dentist/" class="ins-pill">McLaren</a>
-      <a href="/wellcare-dentist/" class="ins-pill">WellCare</a>
-      <a href="/blue-cross-complete-dentist/" class="ins-pill">Blue Cross Complete</a>
-      <a href="/ameritas-dentist/" class="ins-pill">Ameritas</a>
-      <a href="/dental-financing/" class="ins-pill">CareCredit</a>
-      <a href="/liberty-dental-dentist/" class="ins-pill">Liberty Dental</a>
+      <a href="/unitedhealthcare-dentist/" class="ins-pill">UnitedHealthcare</a>
+      <a href="/guardian-dentist/" class="ins-pill">Guardian</a>
       <a href="/principal-dentist/" class="ins-pill">Principal</a>
-      <a href="/unitedhealthcare-dentist/" class="ins-pill">United Health</a>
-      <a href="/anthem-bcbs-dentist/" class="ins-pill">Anthem BCBS</a>
+      <a href="/united-concordia-dentist/" class="ins-pill">United Concordia</a>
+      <a href="/unum-dentist/" class="ins-pill">Unum</a>
+      <a href="/ameritas-dentist/" class="ins-pill">Ameritas</a>
+      <a href="/liberty-dental-dentist/" class="ins-pill">Liberty Dental</a>
       <a href="/sun-life-dentist/" class="ins-pill">Sun Life</a>
-      <div class="ins-pill">+ Many More</div>
+      <a href="/priority-health-dentist/" class="ins-pill">Priority Health</a>
+      <a href="/mutual-of-omaha-dentist/" class="ins-pill">Mutual of Omaha</a>
+      <a href="/lincoln-financial-dentist/" class="ins-pill">Lincoln Financial</a>
+      <a href="/the-standard-dentist/" class="ins-pill">The Standard</a>
+      <a href="/geha-dentist/" class="ins-pill">GEHA</a>
+      <a href="/dentemax-dentist/" class="ins-pill">DenteMax</a>
+      <a href="/beam-dental-dentist/" class="ins-pill">Beam Dental</a>
+      <a href="/best-life-dentist/" class="ins-pill">Best Life</a>
+      <a href="/careington-dentist/" class="ins-pill">Careington</a>
+      <a href="/adn-administrators-dentist/" class="ins-pill">ADN Administrators</a>
     </div>
 
-    <div class="ins-cta reveal">
+    <div class="ins-group-label reveal">Additional Plans We Accept</div>
+    <div class="ins-grid reveal" role="group" aria-label="Additional Plans We Accept">
+      <a href="/physicians-mutual-dentist/" class="ins-pill">Physicians Mutual</a>
+      <a href="/renaissance-dental-dentist/" class="ins-pill">Renaissance</a>
+      <a href="/aflac-dentist/" class="ins-pill">Aflac</a>
+      <a href="/usaa-dentist/" class="ins-pill">USAA</a>
+      <a href="/dominion-national-dentist/" class="ins-pill">Dominion National</a>
+      <a href="/reliance-standard-dentist/" class="ins-pill">Reliance Standard</a>
+      <a href="/solstice-dentist/" class="ins-pill">Solstice</a>
+      <a href="/truassure-dentist/" class="ins-pill">TruAssure</a>
+      <a href="/paramount-dental-dentist/" class="ins-pill">Paramount Dental</a>
+      <a href="/emi-health-dentist/" class="ins-pill">EMI Health</a>
+      <a href="/farm-bureau-dentist/" class="ins-pill">Farm Bureau</a>
+      <a href="/equitable-dentist/" class="ins-pill">Equitable</a>
+      <a href="/premera-dentist/" class="ins-pill">Premera</a>
+      <a href="/meritain-health-dentist/" class="ins-pill">Meritain Health</a>
+      <a href="/nippon-life-dentist/" class="ins-pill">Nippon Life</a>
+      <a href="/medico-dentist/" class="ins-pill">Medico</a>
+      <a href="/umr-dentist/" class="ins-pill">UMR</a>
+      <a href="/us-health-group-dentist/" class="ins-pill">US Health Group</a>
+      <a href="/dental-financing/" class="ins-pill">CareCredit</a>
+    </div>
+
+    <p class="ins-all reveal"><a href="/insurance-accepted/">View all accepted insurance plans &rarr;</a></p>
+
+<div class="ins-cta reveal">
       <p class="ins-cta-t">Tap a plan above to learn more. Don't see your plan? <strong>Call us. We likely accept it.</strong> We verify your insurance coverage before your appointment at no charge.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
         <a href="#call" data-call-modal class="btn btn-white btn-sm">
