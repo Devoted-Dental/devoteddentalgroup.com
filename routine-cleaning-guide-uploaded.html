@@ -72,7 +72,7 @@ document.addEventListener('click', function(e){
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,400;1,6..12,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,400;1,6..12,600&family=Playfair+Display:wght@400;700&family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 /* Ligature + WONK fix */
@@ -966,7 +966,7 @@ body.drawer-open{overflow:hidden}
   <div class="container">
     <div class="nav-inner">
       <a href="/" class="nav-logo" aria-label="Devoted Dental Group: go to homepage">
-        <img src="/assets/logo.png" alt="Devoted Dental Group" height="36" style="height:36px;width:auto;object-fit:contain">
+        <img src="/assets/logo.png" alt="Devoted Dental Group" width="300" height="36" style="height:36px;width:auto;object-fit:contain">
       </a>
       <div class="nav-links">
         <a href="/" class="nav-a">Home</a>
@@ -1175,7 +1175,7 @@ body.drawer-open{overflow:hidden}
 .blog-faq-section .container{max-width:760px}
 .blog-faq-item{background:var(--white);border:1.5px solid var(--grey-200);border-radius:18px;padding:22px 26px;margin-bottom:14px}
 .blog-faq-item h3{font-size:1rem;font-weight:800;color:var(--db-900);margin:0 0 10px;display:flex;align-items:flex-start;gap:12px;line-height:1.4}
-.blog-faq-item h3 span{min-width:26px;height:26px;border-radius:50%;background:var(--lb-500);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.blog-faq-item h3 span{min-width:26px;height:26px;border-radius:50%;background:#0276B5;color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
 .blog-faq-item p{font-size:.93rem;color:var(--grey-600);line-height:1.85;margin:0 0 0 38px}
 
 .blog-cta-section{background:linear-gradient(135deg,var(--lb-500),var(--lb-700));padding:clamp(44px,6vw,64px) 0}
@@ -1379,6 +1379,8 @@ body.drawer-open{overflow:hidden}
         <a href="/payment-plans/" class="footer-link">Payment Plans</a>
         <a href="/insurance-accepted/" class="footer-link">Accepted Insurance</a>
         <a href="/new-patient-special/" class="footer-link">Specials</a>
+        <a href="/dentist-no-insurance/" class="footer-link">No Insurance? We Can Help</a>
+        <a href="/military-dentist/" class="footer-link">Military &amp; Veterans</a>
         <a href="/blog/" class="footer-link">Blog &amp; Dental Tips</a>
         <a href="/employment/" class="footer-link">Employment</a>
         <a href="/provider-referrals/" class="footer-link">Provider Referrals</a>
@@ -1410,7 +1412,7 @@ body.drawer-open{overflow:hidden}
 </footer>
 
 <!-- Mobile CTA -->
-<div class="mobile-cta">
+<div class="mobile-cta" role="region" aria-label="Quick actions">
   <a href="#book" data-book-modal class="mcb"><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>Book Appointment</a>
   <a href="/locations/" class="mcb"><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Find a Location</a>
 </div>
@@ -2078,7 +2080,7 @@ var FAQ_TOPICS = [
   },
   {
     keywords: ['insurance', 'ppo', 'accept my insurance', 'do you take', 'coverage', 'covered'],
-    reply: function() { return "We accept Medicaid, Medicare Advantage plans, and 50+ PPO insurance plans across all 5 locations. Our front desk team can verify your specific benefits before your visit, so there are no surprises."; },
+    reply: function() { return "We accept Medicaid, Medicare Advantage plans, and 60+ insurance plans across all 5 locations. Our front desk team can verify your specific benefits before your visit, so there are no surprises."; },
     quickReplies: ['Book Appointment', '$79 New Patient Special', 'Our Locations']
   },
   {
@@ -2878,7 +2880,14 @@ body.a11y-grayscale>:not(#a11y-btn):not(#a11y-panel):not(#a11y-gs-overlay):not(.
 @media(max-width:768px){#tidio-chat-iframe{bottom:20px!important}}
 </style>
 <!-- hero-fit -->
-<style id="hero-fit-css">.svcp-hero-inner{max-width:900px}.svcp-hero h1,.page-hero h1{font-size:clamp(1.7rem,5.6vw,3.4rem);line-height:1.12;overflow-wrap:normal}</style>
+<style id="hero-fit-css">.svcp-hero-inner{max-width:900px}.svcp-hero h1,.page-hero h1{font-size:clamp(1.7rem,5.6vw,3.4rem);line-height:1.12;overflow-wrap:normal}
+/* accessibility: WCAG AA text contrast */
+:root{--lb-600:#0369A1}
+.btn-primary,.loc-feat-pill,.map-tab.active,.map-featured-badge,.mcb:last-child,.sbb-btn-book,.bn-btn-primary{background:#0276B5;border-color:#0276B5;color:#fff}
+.btn-primary:hover{background:#0369A1;border-color:#0369A1}
+.nav-dd-section-label,.sbb-picker-header,.sbb-picker-item span{color:#5B6B80}
+/* usability: larger tap targets on touch screens */
+@media (max-width:900px){.flp-phone,.footer-link,.svc-link,.svcp-breadcrumb a,.page-hero-breadcrumb a,.loc-breadcrumb a,.breadcrumb a{padding-block:7px}}</style>
 <script id="hero-fit-js">(function(){function fit(){var h=document.querySelector('h1');if(!h)return;h.style.fontSize='';var cs=getComputedStyle(h),fs0=parseFloat(cs.fontSize);function lines(){var c=getComputedStyle(h),f=parseFloat(c.fontSize),lh=parseFloat(c.lineHeight);if(isNaN(lh))lh=f*1.2;return{n:h.getBoundingClientRect().height/lh,o:h.scrollWidth>h.clientWidth+1}}var r=lines();if(r.n<=2.2&&!r.o)return;var fs=fs0;while(fs>18){fs-=1;h.style.fontSize=fs+'px';r=lines();if(r.n<=2.2&&!r.o)return}h.style.fontSize=''}var t;function run(){clearTimeout(t);t=setTimeout(fit,60)}if(document.readyState!=='loading')fit();else document.addEventListener('DOMContentLoaded',fit);window.addEventListener('load',fit);window.addEventListener('resize',run);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit)})();</script>
-</body>
+<style id="a11y-css">:root{--grey-400:#64748B;--lb-600:#0369A1}.loc-prov-badge,.active.office-tab,.prov-tab.active,#pr-cb-accept,.btn-primary,.nav-ctas .btn-primary{background-color:#0276B5}.loc-prov-badge{background:#0276B5}.active.office-tab,.prov-tab.active{background:#0276B5;border-color:#0276B5}.label,.blog-related-links a{color:#0369A1}.loc-prov-badge[style]{background:#0276B5!important}.mcb:last-child{background:#0276B5}</style></body>
 </html>

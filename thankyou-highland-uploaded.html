@@ -25,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,400;1,6..12,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,400;1,6..12,600&family=Playfair+Display:wght@400;700&family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{font-variant-ligatures:no-common-ligatures}
@@ -836,7 +836,7 @@ body.drawer-open{overflow:hidden}
   <div class="container">
     <div class="nav-inner">
       <a href="/" class="nav-logo" aria-label="Devoted Dental Group: go to homepage">
-        <img src="/assets/logo.png" alt="Devoted Dental Group" height="36" style="height:36px;width:auto;object-fit:contain">
+        <img src="/assets/logo.png" alt="Devoted Dental Group" width="300" height="36" style="height:36px;width:auto;object-fit:contain" loading="lazy" decoding="async">
       </a>
       <div class="nav-ctas">
         <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
@@ -1129,15 +1129,15 @@ body.drawer-open{overflow:hidden}
     <h2 style="font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:clamp(1.6rem,3vw,2.2rem);color:var(--db-900);letter-spacing:-.02em;line-height:1.2;margin-bottom:32px">Here's What to Expect</h2>
     <div style="display:flex;flex-direction:column;gap:20px;text-align:left">
       <div style="display:flex;gap:16px;align-items:flex-start">
-        <div style="width:36px;height:36px;border-radius:50%;background:var(--lb-500);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">1</div>
+        <div style="width:36px;height:36px;border-radius:50%;background:#0276B5;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">1</div>
         <div><div style="font-weight:800;color:var(--db-900);margin-bottom:4px">We'll confirm your appointment</div><div style="font-size:.93rem;color:var(--grey-600);line-height:1.8">Our team will call or text to confirm your appointment time, location, and anything you need to bring.</div></div>
       </div>
       <div style="display:flex;gap:16px;align-items:flex-start">
-        <div style="width:36px;height:36px;border-radius:50%;background:var(--lb-500);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">2</div>
+        <div style="width:36px;height:36px;border-radius:50%;background:#0276B5;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">2</div>
         <div><div style="font-weight:800;color:var(--db-900);margin-bottom:4px">Bring your insurance card and ID</div><div style="font-size:.93rem;color:var(--grey-600);line-height:1.8">Arrive a few minutes early to complete new patient paperwork. We accept Medicaid, Medicare, and most major PPO plans.</div></div>
       </div>
       <div style="display:flex;gap:16px;align-items:flex-start">
-        <div style="width:36px;height:36px;border-radius:50%;background:var(--lb-500);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">3</div>
+        <div style="width:36px;height:36px;border-radius:50%;background:#0276B5;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0">3</div>
         <div><div style="font-weight:800;color:var(--db-900);margin-bottom:4px">Leave with a clear treatment plan</div><div style="font-size:.93rem;color:var(--grey-600);line-height:1.8">After your exam, your dentist will walk you through exactly what they found and recommend, no surprises, no pressure.</div></div>
       </div>
     </div>
@@ -1263,6 +1263,8 @@ body.drawer-open{overflow:hidden}
         <a href="/payment-plans/" class="footer-link">Payment Plans</a>
         <a href="/insurance-accepted/" class="footer-link">Accepted Insurance</a>
         <a href="/new-patient-special/" class="footer-link">Specials</a>
+        <a href="/dentist-no-insurance/" class="footer-link">No Insurance? We Can Help</a>
+        <a href="/military-dentist/" class="footer-link">Military &amp; Veterans</a>
         <a href="/blog/" class="footer-link">Blog &amp; Dental Tips</a>
         <a href="/employment/" class="footer-link">Employment</a>
         <a href="/provider-referrals/" class="footer-link">Provider Referrals</a>
@@ -1294,7 +1296,7 @@ body.drawer-open{overflow:hidden}
 </footer>
 
 <!-- Mobile CTA -->
-<div class="mobile-cta">
+<div class="mobile-cta" role="region" aria-label="Quick actions">
   <a href="/" class="mcb" style="background:var(--db-900);color:var(--white)">
     <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
     Homepage
@@ -1861,7 +1863,7 @@ var FAQ_TOPICS = [
   },
   {
     keywords: ['insurance', 'ppo', 'accept my insurance', 'do you take', 'coverage', 'covered'],
-    reply: function() { return "We accept Medicaid, Medicare Advantage plans, and 50+ PPO insurance plans across all 5 locations. Our front desk team can verify your specific benefits before your visit, so there are no surprises."; },
+    reply: function() { return "We accept Medicaid, Medicare Advantage plans, and 60+ insurance plans across all 5 locations. Our front desk team can verify your specific benefits before your visit, so there are no surprises."; },
     quickReplies: ['Book Appointment', '$79 New Patient Special', 'Our Locations']
   },
   {
@@ -2702,7 +2704,14 @@ body.a11y-grayscale>:not(#a11y-btn):not(#a11y-panel):not(#a11y-gs-overlay):not(.
 @media(max-width:768px){#tidio-chat-iframe{bottom:20px!important}}
 </style>
 <!-- hero-fit -->
-<style id="hero-fit-css">.svcp-hero-inner{max-width:900px}.svcp-hero h1,.page-hero h1{font-size:clamp(1.7rem,5.6vw,3.4rem);line-height:1.12;overflow-wrap:normal}</style>
+<style id="hero-fit-css">.svcp-hero-inner{max-width:900px}.svcp-hero h1,.page-hero h1{font-size:clamp(1.7rem,5.6vw,3.4rem);line-height:1.12;overflow-wrap:normal}
+/* accessibility: WCAG AA text contrast */
+:root{--lb-600:#0369A1}
+.btn-primary,.loc-feat-pill,.map-tab.active,.map-featured-badge,.mcb:last-child,.sbb-btn-book,.bn-btn-primary{background:#0276B5;border-color:#0276B5;color:#fff}
+.btn-primary:hover{background:#0369A1;border-color:#0369A1}
+.nav-dd-section-label,.sbb-picker-header,.sbb-picker-item span{color:#5B6B80}
+/* usability: larger tap targets on touch screens */
+@media (max-width:900px){.flp-phone,.footer-link,.svc-link,.svcp-breadcrumb a,.page-hero-breadcrumb a,.loc-breadcrumb a,.breadcrumb a{padding-block:7px}}</style>
 <script id="hero-fit-js">(function(){function fit(){var h=document.querySelector('h1');if(!h)return;h.style.fontSize='';var cs=getComputedStyle(h),fs0=parseFloat(cs.fontSize);function lines(){var c=getComputedStyle(h),f=parseFloat(c.fontSize),lh=parseFloat(c.lineHeight);if(isNaN(lh))lh=f*1.2;return{n:h.getBoundingClientRect().height/lh,o:h.scrollWidth>h.clientWidth+1}}var r=lines();if(r.n<=2.2&&!r.o)return;var fs=fs0;while(fs>18){fs-=1;h.style.fontSize=fs+'px';r=lines();if(r.n<=2.2&&!r.o)return}h.style.fontSize=''}var t;function run(){clearTimeout(t);t=setTimeout(fit,60)}if(document.readyState!=='loading')fit();else document.addEventListener('DOMContentLoaded',fit);window.addEventListener('load',fit);window.addEventListener('resize',run);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit)})();</script>
-</body>
+<style id="a11y-css">:root{--grey-400:#64748B;--lb-600:#0369A1}.loc-prov-badge,.active.office-tab,.prov-tab.active,#pr-cb-accept,.btn-primary,.nav-ctas .btn-primary{background-color:#0276B5}.loc-prov-badge{background:#0276B5}.active.office-tab,.prov-tab.active{background:#0276B5;border-color:#0276B5}.label,.blog-related-links a{color:#0369A1}.loc-prov-badge[style]{background:#0276B5!important}.mcb:last-child{background:#0276B5}</style></body>
 </html>

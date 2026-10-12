@@ -65,8 +65,7 @@ document.addEventListener('click', function(e){
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,400;1,6..12,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Lexend:wght@400;600;700&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,400;1,6..12,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,400;1,6..12,600&family=Playfair+Display:wght@400;700&family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -1053,7 +1052,7 @@ body.drawer-open{overflow:hidden}
   <div class="container">
     <div class="nav-inner">
       <a href="/" class="nav-logo" aria-label="Devoted Dental Group: go to homepage">
-        <img src="/assets/logo.png" alt="Devoted Dental Group" height="36" style="height:36px;width:auto;object-fit:contain">
+        <img src="/assets/logo.png" alt="Devoted Dental Group" width="300" height="36" style="height:36px;width:auto;object-fit:contain">
       </a>
       <div class="nav-links">
         <a href="/" class="nav-a">Home</a>
@@ -1228,38 +1227,68 @@ body.drawer-open{overflow:hidden}
 <!-- ============================================================
      PAGE HERO
      ============================================================ -->
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": [
         "Dentist",
-        "MedicalClinic",
         "LocalBusiness"
       ],
-      "@id": "https://devoteddentalgroup.com/warren/",
+      "@id": "https://devoteddentalgroup.com/warren/#business",
       "name": "Devoted Dental Warren",
       "url": "https://devoteddentalgroup.com/warren/",
-      "telephone": "586-250-5000",
+      "telephone": "(586) 250-5000",
       "sameAs": [
         "https://www.healthgrades.com/group-directory/mi-michigan/warren/devoted-dental-warren-u3m588j",
         "https://share.google/qHF9f6z5Tg68jEvGv"
       ],
-      "priceRange": "$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "29856 Schoenherr Rd",
         "addressLocality": "Warren",
         "addressRegion": "MI",
+        "postalCode": "48088",
         "addressCountry": "US"
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "500",
-        "bestRating": "5"
-      }
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.5142,
+        "longitude": -82.9875
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Monday",
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Tuesday",
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Wednesday",
+          "opens": "09:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Thursday",
+          "opens": "08:00",
+          "closes": "16:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "08:00",
+          "closes": "15:00"
+        }
+      ],
+      "paymentAccepted": "Medicaid, Medicare, All PPO Insurance, Cherry Financing, Cash, Credit Card"
     },
     {
       "@type": "BreadcrumbList",
@@ -1285,10 +1314,8 @@ body.drawer-open{overflow:hidden}
       ]
     }
   ]
-}
-</script>
-<script type="application/ld+json">
-{
+}</script>
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
@@ -1325,8 +1352,7 @@ body.drawer-open{overflow:hidden}
       }
     }
   ]
-}
-</script>
+}</script>
 
 
 <section class="page-hero" aria-labelledby="lp-heading" style="min-height:360px">
@@ -1443,19 +1469,19 @@ body.drawer-open{overflow:hidden}
     </div>
     <div style="background:var(--white);border:1.5px solid var(--grey-200);border-radius:22px;padding:4px 26px 4px"><div style="padding:22px 0;border-bottom:1px solid var(--grey-200);">
           <h3 style="font-size:1rem;font-weight:800;color:var(--db-900);margin:0 0 10px;display:flex;align-items:flex-start;gap:12px;line-height:1.4">
-            <span style="min-width:26px;height:26px;border-radius:50%;background:var(--lb-500);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">1</span>Does Devoted Dental Warren accept Medicare Advantage Dental Plans?</h3>
+            <span style="min-width:26px;height:26px;border-radius:50%;background:#0276B5;color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">1</span>Does Devoted Dental Warren accept Medicare Advantage Dental Plans?</h3>
           <p style="font-size:.93rem;color:var(--grey-600);line-height:1.85;margin:0 0 0 38px">Yes. Devoted Dental Warren accepts Medicare Advantage Dental Plans at our Warren office. Our team verifies your specific plan and benefits before your visit.</p>
         </div><div style="padding:22px 0;border-bottom:1px solid var(--grey-200);">
           <h3 style="font-size:1rem;font-weight:800;color:var(--db-900);margin:0 0 10px;display:flex;align-items:flex-start;gap:12px;line-height:1.4">
-            <span style="min-width:26px;height:26px;border-radius:50%;background:var(--lb-500);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">2</span>Does Medicare Advantage Dental Plans include dental coverage?</h3>
+            <span style="min-width:26px;height:26px;border-radius:50%;background:#0276B5;color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">2</span>Does Medicare Advantage Dental Plans include dental coverage?</h3>
           <p style="font-size:.93rem;color:var(--grey-600);line-height:1.85;margin:0 0 0 38px">Original Medicare does not cover routine dental care, but many Medicare Advantage plans add dental benefits. Those benefits vary by plan, so our team confirms what your Medicare Advantage Dental Plans plan covers before treatment.</p>
         </div><div style="padding:22px 0;border-bottom:1px solid var(--grey-200);">
           <h3 style="font-size:1rem;font-weight:800;color:var(--db-900);margin:0 0 10px;display:flex;align-items:flex-start;gap:12px;line-height:1.4">
-            <span style="min-width:26px;height:26px;border-radius:50%;background:var(--lb-500);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">3</span>Do I need a referral to use my Medicare Advantage Dental Plans benefits?</h3>
+            <span style="min-width:26px;height:26px;border-radius:50%;background:#0276B5;color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">3</span>Do I need a referral to use my Medicare Advantage Dental Plans benefits?</h3>
           <p style="font-size:.93rem;color:var(--grey-600);line-height:1.85;margin:0 0 0 38px">No. Medicare Advantage Dental Plans patients can book directly with Devoted Dental Warren for covered services, no referral required.</p>
         </div><div style="padding:22px 0;">
           <h3 style="font-size:1rem;font-weight:800;color:var(--db-900);margin:0 0 10px;display:flex;align-items:flex-start;gap:12px;line-height:1.4">
-            <span style="min-width:26px;height:26px;border-radius:50%;background:var(--lb-500);color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">4</span>What if Medicare Advantage Dental Plans doesn&#x27;t cover a treatment I need?</h3>
+            <span style="min-width:26px;height:26px;border-radius:50%;background:#0276B5;color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px">4</span>What if Medicare Advantage Dental Plans doesn&#x27;t cover a treatment I need?</h3>
           <p style="font-size:.93rem;color:var(--grey-600);line-height:1.85;margin:0 0 0 38px">If a service isn&#x27;t covered, our team will explain your options before treatment, including 0% financing through CareCredit and Cherry Financing. Our $79 New Patient Special is a self-pay offer for patients without dental insurance; if you have coverage, we always bill your plan first.</p>
         </div></div>
   </div>
@@ -1476,7 +1502,7 @@ body.drawer-open{overflow:hidden}
     <p style="font-size:.93rem;color:rgba(255,255,255,.85);line-height:1.85">Our Warren office proudly serves patients from Warren and the surrounding communities of Sterling Heights, Eastpointe, Roseville, and Clinton Township. Whether you're searching for a <strong>Medicare Advantage dentist in Warren, MI</strong> or simply looking for a trusted dental home in Macomb County, Devoted Dental Warren is here for you with same-day appointments available, Medicare Advantage accepted.</p>
     <div style="margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
       <a href="https://book.modento.io/devoted-dental-warren/patient-details" target="_blank" rel="noopener"
-         style="display:inline-flex;align-items:center;gap:8px;background:var(--lb-500);color:#fff;font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:14px;padding:13px 26px;border-radius:var(--r-full);text-decoration:none;transition:background .2s;letter-spacing:.01em"
+         style="display:inline-flex;align-items:center;gap:8px;background:#0276B5;color:#fff;font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:14px;padding:13px 26px;border-radius:var(--r-full);text-decoration:none;transition:background .2s;letter-spacing:.01em"
          onmouseover="this.style.background='var(--lb-600)'"
          onmouseout="this.style.background='var(--lb-500)'">
         Book Your Appointment
@@ -1575,6 +1601,8 @@ body.drawer-open{overflow:hidden}
         <a href="/payment-plans/" class="footer-link">Payment Plans</a>
         <a href="/insurance-accepted/" class="footer-link">Accepted Insurance</a>
         <a href="/new-patient-special/" class="footer-link">Specials</a>
+        <a href="/dentist-no-insurance/" class="footer-link">No Insurance? We Can Help</a>
+        <a href="/military-dentist/" class="footer-link">Military &amp; Veterans</a>
         <a href="/blog/" class="footer-link">Blog &amp; Dental Tips</a>
         <a href="/employment/" class="footer-link">Employment</a>
         <a href="/provider-referrals/" class="footer-link">Provider Referrals</a>
@@ -1606,7 +1634,7 @@ body.drawer-open{overflow:hidden}
 </footer>
 
 <!-- Mobile Sticky CTA -->
-<div class="mobile-cta">
+<div class="mobile-cta" role="region" aria-label="Quick actions">
   <a href="#call" data-call-modal class="mcb">
     <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M6.6 10.8a15.6 15.6 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.57 3.57 1 1 0 01-.25 1z"/></svg>
     Call Now
@@ -2349,7 +2377,7 @@ var FAQ_TOPICS = [
   },
   {
     keywords: ['insurance', 'ppo', 'accept my insurance', 'do you take', 'coverage', 'covered'],
-    reply: function() { return "We accept Medicaid, Medicare Advantage plans, and 50+ PPO insurance plans across all 5 locations. Our front desk team can verify your specific benefits before your visit, so there are no surprises."; },
+    reply: function() { return "We accept Medicaid, Medicare Advantage plans, and 60+ insurance plans across all 5 locations. Our front desk team can verify your specific benefits before your visit, so there are no surprises."; },
     quickReplies: ['Book Appointment', '$79 New Patient Special', 'Our Locations']
   },
   {
@@ -3190,7 +3218,14 @@ body.a11y-grayscale>:not(#a11y-btn):not(#a11y-panel):not(#a11y-gs-overlay):not(.
 @media(max-width:768px){#tidio-chat-iframe{bottom:20px!important}}
 </style>
 <!-- hero-fit -->
-<style id="hero-fit-css">.svcp-hero-inner{max-width:900px}.svcp-hero h1,.page-hero h1{font-size:clamp(1.7rem,5.6vw,3.4rem);line-height:1.12;overflow-wrap:normal}</style>
+<style id="hero-fit-css">.svcp-hero-inner{max-width:900px}.svcp-hero h1,.page-hero h1{font-size:clamp(1.7rem,5.6vw,3.4rem);line-height:1.12;overflow-wrap:normal}
+/* accessibility: WCAG AA text contrast */
+:root{--lb-600:#0369A1}
+.btn-primary,.loc-feat-pill,.map-tab.active,.map-featured-badge,.mcb:last-child,.sbb-btn-book,.bn-btn-primary{background:#0276B5;border-color:#0276B5;color:#fff}
+.btn-primary:hover{background:#0369A1;border-color:#0369A1}
+.nav-dd-section-label,.sbb-picker-header,.sbb-picker-item span{color:#5B6B80}
+/* usability: larger tap targets on touch screens */
+@media (max-width:900px){.flp-phone,.footer-link,.svc-link,.svcp-breadcrumb a,.page-hero-breadcrumb a,.loc-breadcrumb a,.breadcrumb a{padding-block:7px}}</style>
 <script id="hero-fit-js">(function(){function fit(){var h=document.querySelector('h1');if(!h)return;h.style.fontSize='';var cs=getComputedStyle(h),fs0=parseFloat(cs.fontSize);function lines(){var c=getComputedStyle(h),f=parseFloat(c.fontSize),lh=parseFloat(c.lineHeight);if(isNaN(lh))lh=f*1.2;return{n:h.getBoundingClientRect().height/lh,o:h.scrollWidth>h.clientWidth+1}}var r=lines();if(r.n<=2.2&&!r.o)return;var fs=fs0;while(fs>18){fs-=1;h.style.fontSize=fs+'px';r=lines();if(r.n<=2.2&&!r.o)return}h.style.fontSize=''}var t;function run(){clearTimeout(t);t=setTimeout(fit,60)}if(document.readyState!=='loading')fit();else document.addEventListener('DOMContentLoaded',fit);window.addEventListener('load',fit);window.addEventListener('resize',run);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit)})();</script>
-</body>
+<style id="a11y-css">:root{--grey-400:#64748B;--lb-600:#0369A1}.loc-prov-badge,.active.office-tab,.prov-tab.active,#pr-cb-accept,.btn-primary,.nav-ctas .btn-primary{background-color:#0276B5}.loc-prov-badge{background:#0276B5}.active.office-tab,.prov-tab.active{background:#0276B5;border-color:#0276B5}.label,.blog-related-links a{color:#0369A1}.loc-prov-badge[style]{background:#0276B5!important}.mcb:last-child{background:#0276B5}</style></body>
 </html>
