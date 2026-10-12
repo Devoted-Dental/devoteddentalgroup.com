@@ -603,5 +603,25 @@
 
 /blog/use-your-dental-benefits-before-they-expire/  /blog/use-your-dental-benefits-before-they-expire.html  200
 
+# --- Military pages
+/military-dentist/  /military-dentist.html  200
+/military-dentist-chesterfield-mi/  /military-dentist-chesterfield-mi.html  200
+/military-dentist-highland-mi/  /military-dentist-highland-mi.html  200
+/military-dentist-livonia-mi/  /military-dentist-livonia-mi.html  200
+/military-dentist-warren-mi/  /military-dentist-warren-mi.html  200
+/military-dentist-wyandotte-mi/  /military-dentist-wyandotte-mi.html  200
+/active-duty-dentist/  /active-duty-dentist.html  200
+/active-duty-dentist-chesterfield-mi/  /active-duty-dentist-chesterfield-mi.html  200
+/active-duty-dentist-highland-mi/  /active-duty-dentist-highland-mi.html  200
+/active-duty-dentist-livonia-mi/  /active-duty-dentist-livonia-mi.html  200
+/active-duty-dentist-warren-mi/  /active-duty-dentist-warren-mi.html  200
+/active-duty-dentist-wyandotte-mi/  /active-duty-dentist-wyandotte-mi.html  200
+/veterans-dentist/  /veterans-dentist.html  200
+/veterans-dentist-chesterfield-mi/  /veterans-dentist-chesterfield-mi.html  200
+/veterans-dentist-highland-mi/  /veterans-dentist-highland-mi.html  200
+/veterans-dentist-livonia-mi/  /veterans-dentist-livonia-mi.html  200
+/veterans-dentist-warren-mi/  /veterans-dentist-warren-mi.html  200
+/veterans-dentist-wyandotte-mi/  /veterans-dentist-wyandotte-mi.html  200
+
 # Fallback for any unmatched path -- serves the real branded 404 page
 /*  /404.html  404
