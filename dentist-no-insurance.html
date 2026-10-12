@@ -2082,7 +2082,7 @@ body.drawer-open{overflow:hidden}
 <section class="svcp-hero" aria-labelledby="svcp-hero-h1">
   <div class="container svcp-hero-inner">
     <div class="svcp-breadcrumb"><a href="/">Home</a> / Dentist for Patients Without Insurance</div>
-    <h1 id="svcp-hero-h1">Dentist for Patients Without Insurance<br><span style="color:var(--lb-400)">in Metro Detroit</span></h1>
+    <h1 id="svcp-hero-h1">Dentist Without Insurance<br><span style="color:var(--lb-400)">in Metro Detroit</span></h1>
     <p class="svcp-hero-sub">No insurance, no problem. Start with a comprehensive exam, X-rays, and a cleaning for $79, then get a clear plan and payment options that fit your budget.</p>
     <div class="svcp-hero-ctas">
       <a href="#book" data-book-modal class="btn btn-primary btn-lg">Book An Appointment</a>
@@ -2100,7 +2100,7 @@ body.drawer-open{overflow:hidden}
     <div style="display:grid;grid-template-columns:1fr 308px;gap:48px;align-items:flex-start">
       <div>
         <span class="label" style="margin-bottom:12px">About This Service</span>
-        <h2 style="font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:clamp(1.5rem,2.6vw,2rem);color:var(--db-900);letter-spacing:-.015em;line-height:1.25;margin-bottom:18px"><span class="text-blue">Dentist Without Insurance</span> in Metro Detroit</h2>
+        <h2 style="font-family:'Nunito Sans',sans-serif;font-weight:800;font-size:clamp(1.5rem,2.6vw,2rem);color:var(--db-900);letter-spacing:-.015em;line-height:1.25;margin-bottom:18px"><span class="text-blue">Dentist for Patients Without Insurance</span> in Metro Detroit</h2>
         <p style="font-size:1.02rem;color:var(--grey-600);line-height:1.9;margin-bottom:18px">Not having dental insurance should never keep you from the dentist. Devoted Dental Group welcomes patients without insurance at all five Metro Detroit offices, with a $79 New Patient Special (a comprehensive exam, X-rays, and a cleaning), clear treatment plans, and flexible payment options through Cherry Financing and CareCredit.</p>
         <p style="font-size:.93rem;color:var(--grey-600);line-height:1.85;margin-bottom:24px">Putting off the dentist because of cost usually lets a small problem become a bigger one. Start with the $79 visit, let our dentists explain what you need and what it costs, and decide on a plan that works for you. Choose from our offices in Warren, Chesterfield, Livonia, Wyandotte, and Highland.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap"><a href="/emergency-dentist/" style="display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:var(--lb-600);text-decoration:none;padding:9px 16px;border:1.5px solid var(--lb-200);border-radius:30px;background:var(--white)"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Emergency Dentist</a><a href="/same-day-dentist/" style="display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:var(--lb-600);text-decoration:none;padding:9px 16px;border:1.5px solid var(--lb-200);border-radius:30px;background:var(--white)"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Same-Day Dentist</a><a href="/family-dentist/" style="display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:var(--lb-600);text-decoration:none;padding:9px 16px;border:1.5px solid var(--lb-200);border-radius:30px;background:var(--white)"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Family Dentist</a></div>
@@ -4165,6 +4165,9 @@ body.a11y-grayscale>:not(#a11y-btn):not(#a11y-panel):not(#a11y-gs-overlay):not(.
 #tidio-chat-iframe{bottom:72px!important}
 @media(max-width:768px){#tidio-chat-iframe{bottom:20px!important}}
 </style>
+<!-- hero-fit -->
+<style id="hero-fit-css">.svcp-hero-inner{max-width:900px}.svcp-hero h1,.page-hero h1{font-size:clamp(1.7rem,5.6vw,3.4rem);line-height:1.12;overflow-wrap:normal}</style>
+<script id="hero-fit-js">(function(){function fit(){var h=document.querySelector('h1');if(!h)return;h.style.fontSize='';var cs=getComputedStyle(h),fs0=parseFloat(cs.fontSize);function lines(){var c=getComputedStyle(h),f=parseFloat(c.fontSize),lh=parseFloat(c.lineHeight);if(isNaN(lh))lh=f*1.2;return{n:h.getBoundingClientRect().height/lh,o:h.scrollWidth>h.clientWidth+1}}var r=lines();if(r.n<=2.2&&!r.o)return;var fs=fs0;while(fs>18){fs-=1;h.style.fontSize=fs+'px';r=lines();if(r.n<=2.2&&!r.o)return}h.style.fontSize=''}var t;function run(){clearTimeout(t);t=setTimeout(fit,60)}if(document.readyState!=='loading')fit();else document.addEventListener('DOMContentLoaded',fit);window.addEventListener('load',fit);window.addEventListener('resize',run);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit)})();</script>
 </body>
 
 </html>

@@ -2080,7 +2080,7 @@ body.drawer-open{overflow:hidden}
 <section class="svcp-hero" aria-labelledby="svcp-hero-h1">
   <div class="container svcp-hero-inner">
     <div class="svcp-breadcrumb"><a href="/">Home</a> / <a href="/military-dentist/">Military Dentist</a> / Veterans Dentist</div>
-    <h1 id="svcp-hero-h1">Veterans Dentist<br><span style="color:var(--lb-400)">50% Off for Veterans &amp; Their Families</span></h1>
+    <h1 id="svcp-hero-h1">Veterans Dentist<br><span style="color:var(--lb-400)">in Metro Detroit</span></h1>
     <p class="svcp-hero-sub">Devoted Dental Group thanks those who serve with 50% off all dental care for veterans and their families at all 5 Metro Detroit offices.</p>
     <div class="svcp-hero-ctas">
       <a href="#book" data-book-modal class="btn btn-primary btn-lg">Book An Appointment</a>
@@ -4156,6 +4156,9 @@ body.a11y-grayscale>:not(#a11y-btn):not(#a11y-panel):not(#a11y-gs-overlay):not(.
 #tidio-chat-iframe{bottom:72px!important}
 @media(max-width:768px){#tidio-chat-iframe{bottom:20px!important}}
 </style>
+<!-- hero-fit -->
+<style id="hero-fit-css">.svcp-hero-inner{max-width:900px}.svcp-hero h1,.page-hero h1{font-size:clamp(1.7rem,5.6vw,3.4rem);line-height:1.12;overflow-wrap:normal}</style>
+<script id="hero-fit-js">(function(){function fit(){var h=document.querySelector('h1');if(!h)return;h.style.fontSize='';var cs=getComputedStyle(h),fs0=parseFloat(cs.fontSize);function lines(){var c=getComputedStyle(h),f=parseFloat(c.fontSize),lh=parseFloat(c.lineHeight);if(isNaN(lh))lh=f*1.2;return{n:h.getBoundingClientRect().height/lh,o:h.scrollWidth>h.clientWidth+1}}var r=lines();if(r.n<=2.2&&!r.o)return;var fs=fs0;while(fs>18){fs-=1;h.style.fontSize=fs+'px';r=lines();if(r.n<=2.2&&!r.o)return}h.style.fontSize=''}var t;function run(){clearTimeout(t);t=setTimeout(fit,60)}if(document.readyState!=='loading')fit();else document.addEventListener('DOMContentLoaded',fit);window.addEventListener('load',fit);window.addEventListener('resize',run);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit)})();</script>
 </body>
 
 </html>
