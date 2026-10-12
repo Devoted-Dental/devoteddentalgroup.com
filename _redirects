@@ -581,5 +581,27 @@
 /us-health-group-dentist-warren-mi/  /us-health-group-dentist-warren-mi.html  200
 /us-health-group-dentist-wyandotte-mi/  /us-health-group-dentist-wyandotte-mi.html  200
 
+# --- Plan-type pages
+/ppo-dentist/  /ppo-dentist.html  200
+/ppo-dentist-chesterfield-mi/  /ppo-dentist-chesterfield-mi.html  200
+/ppo-dentist-highland-mi/  /ppo-dentist-highland-mi.html  200
+/ppo-dentist-livonia-mi/  /ppo-dentist-livonia-mi.html  200
+/ppo-dentist-warren-mi/  /ppo-dentist-warren-mi.html  200
+/ppo-dentist-wyandotte-mi/  /ppo-dentist-wyandotte-mi.html  200
+/medicare-advantage-dentist/  /medicare-advantage-dentist.html  200
+/medicare-advantage-dentist-chesterfield-mi/  /medicare-advantage-dentist-chesterfield-mi.html  200
+/medicare-advantage-dentist-highland-mi/  /medicare-advantage-dentist-highland-mi.html  200
+/medicare-advantage-dentist-livonia-mi/  /medicare-advantage-dentist-livonia-mi.html  200
+/medicare-advantage-dentist-warren-mi/  /medicare-advantage-dentist-warren-mi.html  200
+/medicare-advantage-dentist-wyandotte-mi/  /medicare-advantage-dentist-wyandotte-mi.html  200
+/federal-employee-dentist/  /federal-employee-dentist.html  200
+/federal-employee-dentist-chesterfield-mi/  /federal-employee-dentist-chesterfield-mi.html  200
+/federal-employee-dentist-highland-mi/  /federal-employee-dentist-highland-mi.html  200
+/federal-employee-dentist-livonia-mi/  /federal-employee-dentist-livonia-mi.html  200
+/federal-employee-dentist-warren-mi/  /federal-employee-dentist-warren-mi.html  200
+/federal-employee-dentist-wyandotte-mi/  /federal-employee-dentist-wyandotte-mi.html  200
+
+/blog/use-your-dental-benefits-before-they-expire/  /blog/use-your-dental-benefits-before-they-expire.html  200
+
 # Fallback for any unmatched path -- serves the real branded 404 page
 /*  /404.html  404
